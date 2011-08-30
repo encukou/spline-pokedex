@@ -23,42 +23,47 @@ DEFAULT_LANGUAGE = u'en'
 
 def add_routes_hook(map, *args, **kwargs):
     """Hook to inject some of our behavior into the routes configuration."""
-    map.connect('/dex/media/*path', controller='dex', action='media')
-    map.connect('/dex/lookup', controller='dex', action='lookup')
-    map.connect('/dex/suggest', controller='dex', action='suggest')
-    map.connect('/dex/parse_size', controller='dex', action='parse_size')
+
+    def connect(*args, **kwargs):
+        kwargs.setdefault('i18n_class', i18n.Translator)
+        map.connect(*args, **kwargs)
+
+    connect('/dex/media/*path', controller='dex', action='media')
+    connect('/dex/lookup', controller='dex', action='lookup')
+    connect('/dex/suggest', controller='dex', action='suggest')
+    connect('/dex/parse_size', controller='dex', action='parse_size')
 
     # These are more specific than the general pages below, so must be first
-    map.connect('/dex/moves/search', controller='dex_search', action='move_search')
-    map.connect('/dex/pokemon/search', controller='dex_search', action='pokemon_search')
+    connect('/dex/moves/search', controller='dex_search', action='move_search')
+    connect('/dex/pokemon/search', controller='dex_search', action='pokemon_search')
 
-    map.connect('/dex/abilities/{name}', controller='dex', action='abilities')
-    map.connect('/dex/items/{pocket}', controller='dex', action='item_pockets')
-    map.connect('/dex/items/{pocket}/{name}', controller='dex', action='items')
-    map.connect('/dex/locations/{name}', controller='dex', action='locations')
-    map.connect('/dex/moves/{name}', controller='dex', action='moves')
-    map.connect('/dex/natures/{name}', controller='dex', action='natures')
-    map.connect('/dex/pokemon/{name}', controller='dex', action='pokemon')
-    map.connect('/dex/pokemon/{name}/flavor', controller='dex', action='pokemon_flavor')
-    map.connect('/dex/pokemon/{name}/locations', controller='dex', action='pokemon_locations')
-    map.connect('/dex/types/{name}', controller='dex', action='types')
+    connect('/dex/abilities/{name}', controller='dex', action='abilities')
+    connect('/dex/items/{pocket}', controller='dex', action='item_pockets')
+    connect('/dex/items/{pocket}/{name}', controller='dex', action='items')
+    connect('/dex/locations/{name}', controller='dex', action='locations')
+    connect('/dex/moves/{name}', controller='dex', action='moves')
+    connect('/dex/natures/{name}', controller='dex', action='natures')
+    connect('/dex/pokemon/{name}', controller='dex', action='pokemon')
+    connect('/dex/pokemon/{name}/flavor', controller='dex', action='pokemon_flavor')
+    connect('/dex/pokemon/{name}/locations', controller='dex', action='pokemon_locations')
+    connect('/dex/types/{name}', controller='dex', action='types')
 
-    map.connect('/dex/abilities', controller='dex', action='abilities_list')
-    map.connect('/dex/items', controller='dex', action='items_list')
-    map.connect('/dex/locations', controller='dex', action='locations_list')
-    map.connect('/dex/natures', controller='dex', action='natures_list')
-    map.connect('/dex/moves', controller='dex', action='moves_list')
-    map.connect('/dex/pokemon', controller='dex', action='pokemon_list')
-    map.connect('/dex/types', controller='dex', action='types_list')
+    connect('/dex/abilities', controller='dex', action='abilities_list')
+    connect('/dex/items', controller='dex', action='items_list')
+    connect('/dex/locations', controller='dex', action='locations_list')
+    connect('/dex/natures', controller='dex', action='natures_list')
+    connect('/dex/moves', controller='dex', action='moves_list')
+    connect('/dex/pokemon', controller='dex', action='pokemon_list')
+    connect('/dex/types', controller='dex', action='types_list')
 
-    map.connect('/dex/gadgets/chain_breeding', controller='dex_gadgets', action='chain_breeding')
-    map.connect('/dex/gadgets/compare_pokemon', controller='dex_gadgets', action='compare_pokemon')
-    map.connect('/dex/gadgets/pokeballs', controller='dex_gadgets', action='capture_rate')
-    map.connect('/dex/gadgets/stat_calculator', controller='dex_gadgets', action='stat_calculator')
-    map.connect('/dex/gadgets/whos_that_pokemon', controller='dex_gadgets', action='whos_that_pokemon')
+    connect('/dex/gadgets/chain_breeding', controller='dex_gadgets', action='chain_breeding')
+    connect('/dex/gadgets/compare_pokemon', controller='dex_gadgets', action='compare_pokemon')
+    connect('/dex/gadgets/pokeballs', controller='dex_gadgets', action='capture_rate')
+    connect('/dex/gadgets/stat_calculator', controller='dex_gadgets', action='stat_calculator')
+    connect('/dex/gadgets/whos_that_pokemon', controller='dex_gadgets', action='whos_that_pokemon')
 
     # JSON API
-    map.connect('/dex/api/pokemon', controller='dex_api', action='pokemon')
+    connect('/dex/api/pokemon', controller='dex_api', action='pokemon')
 
 class PokedexBaseController(BaseController):
     def __before__(self, action, **params):
