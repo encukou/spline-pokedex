@@ -1,6 +1,7 @@
 <%inherit file="/base.mako"/>
 <%namespace name="lib" file="/lib.mako"/>
 <%namespace name="dexlib" file="lib.mako"/>
+<%! import collections %>\
 <%! from splinext.pokedex import i18n %>\
 
 <%def name="title()">${_("%s - Moves") % c.move.name}</%def>
@@ -242,42 +243,38 @@ ${c.move.effect}
 </ul>
 % endif
 
-% if c.move.changelog or c.move.move_effect.changelog:
+<%
+version_data = collections.defaultdict(list)
+current_version = c.move.default_version
+for version in sorted(c.move.versions, key=lambda v: v.version_group.order, reverse=True):
+    vg = current_version.version_group
+    if version.type_id != current_version.type_id:
+        version_data[vg].append(h.literal(_('Type is {0}. ').format(h.pokedex.type_link(version.type))))
+    if version.power != current_version.power:
+        version_data[vg].append(_('Has {0} power.').format(version.power))
+    if version.accuracy != current_version.accuracy:
+        version_data[vg].append(_('Has {0}% accuracy.').format(version.accuracy))
+    if version.pp != current_version.pp:
+        version_data[vg].append(_('Has {0}% PP.').format(version.pp))
+    if version.effect_id != current_version.effect_id:
+        version_data[vg].append(h.literal(_('Effect is: {0}').format(version.short_effect.as_text())))
+    elif version.effect_chance != current_version.effect_chance:
+        ## If we're showing the entire effect, it'll include the effect chance
+        version_data[vg].append(_('Effect chance is {0}%').format(version.effect_chance))
+    current_version = version
+for change in c.move.move_effect.changelog:
+    version_data[change.changed_in].append(change.effect.as_html())
+change_version_groups = sorted(version_data, key=lambda vg: vg.id, reverse=True)
+%>
+% if version_data:
 ${h.h1(_('History'))}
 <dl>
-    <%! import pokedex.db.tables %>\
-    <%
-        all_changelog = (
-            list(c.move.changelog) + list(c.move.move_effect.changelog))
-        all_changelog.sort(key=lambda change: change.changed_in.id, reverse=True)
-    %>\
-
-    % for change in all_changelog:
-    <dt>Before ${h.pokedex.version_icons(*change.changed_in.versions)}</dt>
+    % for version_group in change_version_groups:
+    <dt>Before ${h.pokedex.version_icons(*version_group.versions)}</dt>
     <dd>
-      % if isinstance(change, pokedex.db.tables.MoveChangelog):
-        % if change.type_id is not None:
-        Type is ${h.pokedex.type_link(change.type)}.
-        % endif
-        % if change.power is not None:
-        Has ${change.power} power.
-        % endif
-        % if change.accuracy is not None:
-        Has ${change.accuracy}% accuracy.
-        % endif
-        % if change.pp is not None:
-        Has ${change.pp} PP.
-        % endif
-        % if change.effect_id is not None:
-        ## XXX as_html is more appropriate but adds <p> tags
-        Effect is: ${change.short_effect.as_text()}
-        % elif change.effect_chance is not None:
-        ## If we're showing the entire effect, it'll include the effect chance
-        Effect chance is ${change.effect_chance}.
-        % endif
-      % else:
-        ${change.effect}
-      % endif
+        % for message in version_data[version_group]:
+            ${message |n}
+        % endfor
     </dd>
     % endfor
 </dl>

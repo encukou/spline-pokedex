@@ -1321,10 +1321,12 @@ class PokedexSearchController(PokedexBaseController):
 
         ### Do the searching!
         me = tables.Move
-        query = db.pokedex_session.query(me) \
-            .join(me.names_local) \
-            .join(tables.MoveEffect) \
-            .join(tables.MoveMeta)
+        query = db.pokedex_session.query(me)
+        query = query.join(me.names_local)
+        query = query.join(me.default_version)
+        query = query.join(tables.MoveEffect)
+        query = query.join(tables.MoveMeta)
+        default_version = tables.MoveVersion
 
         # Name
         if c.form.name.data:
@@ -1344,15 +1346,15 @@ class PokedexSearchController(PokedexBaseController):
 
         # Effect
         if c.form.similar_to.data:
-            query = query.filter(me.effect_id == c.form.similar_to.data.effect_id)
+            query = query.filter(default_version.effect_id == c.form.similar_to.data.default_version.effect_id)
 
         # Type
         if c.form.type.data:
             type_ids = [_.id for _ in c.form.type.data]
-            query = query.filter( me.type_id.in_(type_ids) )
+            query = query.filter( default_version.type_id.in_(type_ids) )
 
         if not c.form.shadow_moves.data:
-            query = query.filter(me.type_id != 10002)
+            query = query.filter(default_version.type_id != 10002)
 
         # Flags
         for field, flag_id in c.flag_fields:
@@ -1401,9 +1403,9 @@ class PokedexSearchController(PokedexBaseController):
         ### Numbers
         # These are all ranges:
         for form_field, column in [
-            (c.form.accuracy,           me.accuracy),
-            (c.form.pp,                 me.pp),
-            (c.form.power,              me.power),
+            (c.form.accuracy,           default_version.accuracy),
+            (c.form.pp,                 default_version.pp),
+            (c.form.power,              default_version.power),
             (c.form.priority,           me.priority),
             (c.form.recoil,             tables.MoveMeta.recoil),
             (c.form.healing,            tables.MoveMeta.healing),
@@ -1496,20 +1498,20 @@ class PokedexSearchController(PokedexBaseController):
 
         elif c.form.sort.data == 'type':
             # Sort by type name
-            query = query.join(me.type)
+            query = query.join(default_version.type)
             sort_clauses.insert(0, tables.Type.identifier.asc())
 
         elif c.form.sort.data == 'class':
             sort_clauses.insert(0, me.damage_class_id.asc())
 
         elif c.form.sort.data == 'pp':
-            sort_clauses.insert(0, me.pp.desc())
+            sort_clauses.insert(0, default_version.pp.desc())
 
         elif c.form.sort.data == 'power':
-            sort_clauses.insert(0, me.power.desc())
+            sort_clauses.insert(0, default_version.power.desc())
 
         elif c.form.sort.data == 'accuracy':
-            sort_clauses.insert(0, me.accuracy.desc())
+            sort_clauses.insert(0, default_version.accuracy.desc())
 
         elif c.form.sort.data == 'priority':
             sort_clauses.insert(0, tables.Move.priority.desc())
@@ -1531,10 +1533,9 @@ class PokedexSearchController(PokedexBaseController):
 
         # Eagerload the obvious stuff: type and damage class
         query = query.options(
-            eagerload('type'),
+            eagerload('default_version.type'),
             eagerload('damage_class'),
-            eagerload('move_effect'),
-            eagerload('move_effect.prose_local'),
+            eagerload('default_version.move_effect.prose_local'),
         )
 
         c.results = query.all()

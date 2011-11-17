@@ -130,7 +130,7 @@ ${h.h1(_('Moves'))}
 </table>
 % endif
 
-% if c.type.move_changelog:
+% if c.past_moves:
 ${h.h2(_('Formerly {0}-type moves').format(c.type.name), _('moves:former'))}
 <table class="dex-pokemon-moves striped-rows">
     <col>
@@ -142,10 +142,14 @@ ${h.h2(_('Formerly {0}-type moves').format(c.type.name), _('moves:former'))}
         </tr>
     </thead>
     <tbody>
-        % for move_change in sorted(c.type.move_changelog, key=lambda c: c.move.name):
+        % for move in sorted(c.past_moves, key=lambda m: m.name):
+            <%
+            version_group = min((v.version_group for v in move.versions
+                    if v.type != c.type), key=lambda vg: vg.order)
+            %>
         <tr>
-            <td>${h.pokedex.version_icons(*move_change.changed_in.versions)}</td>
-            ${dexlib.move_table_row(move_change.move)}
+            <td>${h.pokedex.version_icons(*version_group.versions)}</td>
+            ${dexlib.move_table_row(move)}
         % endfor
     </tbody>
 </table>

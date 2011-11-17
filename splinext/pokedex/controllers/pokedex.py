@@ -951,16 +951,17 @@ class PokedexController(PokedexBaseController):
                      innerjoin=False),
                  eagerload_all('move.damage_class'),
                  joinedload_all(tables.PokemonMove.move,
-                     tables.Move.move_effect,
+                     tables.Move.default_version,
+                     tables.MoveVersion.move_effect,
                      tables.MoveEffect.prose_local),
-                 eagerload_all('move.type'),
+                 eagerload_all('move.default_version.type'),
                  eagerload_all('version_group'),
-             ) \
-            .order_by(tables.PokemonMove.level.asc(),
+             )
+        q = q.order_by(tables.PokemonMove.level.asc(),
                       tables.Machine.machine_number.asc(),
                       tables.PokemonMove.order.asc(),
-                      tables.PokemonMove.version_group_id.asc()) \
-            .all()
+                      tables.PokemonMove.version_group_id.asc())
+        q = q.all()
         # TODO this nonsense is to allow methods that don't actually exist,
         # such as for parent's egg moves.  should go away once move tables get
         # their own rendery class
@@ -1304,11 +1305,11 @@ class PokedexController(PokedexBaseController):
             .filter_by(id=c.move.id) \
             .options(
                 eagerload('damage_class'),
-                eagerload('type'),
-                subqueryload('type.damage_efficacies'),
-                joinedload('type.damage_efficacies.target_type'),
+                eagerload('default_version.type'),
+                subqueryload('default_version.type.damage_efficacies'),
+                joinedload('default_version.type.damage_efficacies.target_type'),
                 eagerload('target'),
-                eagerload('move_effect'),
+                eagerload('default_version.move_effect'),
                 eagerload_all(tables.Move.contest_effect, tables.ContestEffect.prose),
                 eagerload('contest_type'),
                 #eagerload('super_contest_effect'),
@@ -1332,10 +1333,11 @@ class PokedexController(PokedexBaseController):
         if c.move.power in (0, 1):
             c.power_percentile = None
         else:
-            q = db.pokedex_session.query(tables.Move) \
-                .filter(tables.Move.power > 1)
-            less = q.filter(tables.Move.power < c.move.power).count()
-            equal = q.filter(tables.Move.power == c.move.power).count()
+            q = db.pokedex_session.query(tables.MoveVersion)
+            q = q.filter(tables.MoveVersion.version_group_id == db.pokedex_session.default_version_group_id)
+            q = q.filter(tables.MoveVersion.power > 1)
+            less = q.filter(tables.MoveVersion.power < c.move.power).count()
+            equal = q.filter(tables.MoveVersion.power == c.move.power).count()
             c.power_percentile = (less + equal * 0.5) / q.count()
 
         ### Flags
@@ -1392,10 +1394,11 @@ class PokedexController(PokedexBaseController):
 
         ### Similar moves
         c.similar_moves = db.pokedex_session.query(tables.Move) \
-            .join(tables.Move.move_effect) \
+            .join(tables.Move.default_version) \
+            .join(tables.MoveVersion.move_effect) \
             .filter(tables.MoveEffect.id == c.move.effect_id) \
             .filter(tables.Move.id != c.move.id) \
-            .options(eagerload('type')) \
+            .options(eagerload('default_version.type')) \
             .all()
 
         ### Pokémon
@@ -1568,8 +1571,8 @@ class PokedexController(PokedexBaseController):
                 subqueryload('moves'),
                 joinedload('moves.damage_class'),
                 joinedload('moves.generation'),
-                joinedload('moves.move_effect'),
-                joinedload('moves.type'),
+                joinedload('moves.default_version.move_effect'),
+                joinedload('moves.default_version.type'),
 
                 # Pokémon stuff
                 subqueryload('pokemon'),
@@ -1581,6 +1584,16 @@ class PokedexController(PokedexBaseController):
                 joinedload('pokemon.stats'),
             ) \
             .one()
+
+        current_moves = db.pokedex_session.query(tables.Move)
+        current_moves = current_moves.join(tables.Move.default_version)
+        current_moves = current_moves.filter(tables.MoveVersion.type == c.type)
+
+        past_moves = db.pokedex_session.query(tables.Move)
+        past_moves = past_moves.join(tables.MoveVersion.move)
+        past_moves = past_moves.filter(tables.MoveVersion.type == c.type)
+        past_moves = past_moves.except_(current_moves).all()
+        c.past_moves = past_moves
 
         return
 
