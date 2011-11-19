@@ -1,7 +1,6 @@
 <%inherit file="/base.mako"/>
 <%namespace name="lib" file="/lib.mako"/>
 <%namespace name="dexlib" file="lib.mako"/>
-<%! import collections %>\
 <%! from splinext.pokedex import i18n %>\
 
 <%def name="title()">${_("%s - Moves") % c.move.name}</%def>
@@ -243,37 +242,30 @@ ${c.move.effect}
 </ul>
 % endif
 
-<%
-version_data = collections.defaultdict(list)
-current_version = c.move.default_version
-for version in sorted(c.move.versions, key=lambda v: v.version_group.order, reverse=True):
-    vg = current_version.version_group
-    if version.type_id != current_version.type_id:
-        version_data[vg].append(h.literal(_('Type is {0}. ').format(h.pokedex.type_link(version.type))))
-    if version.power != current_version.power:
-        version_data[vg].append(_('Has {0} power.').format(version.power))
-    if version.accuracy != current_version.accuracy:
-        version_data[vg].append(_('Has {0}% accuracy.').format(version.accuracy))
-    if version.pp != current_version.pp:
-        version_data[vg].append(_('Has {0}% PP.').format(version.pp))
-    if version.effect_id != current_version.effect_id:
-        version_data[vg].append(h.literal(_('Effect is: {0}').format(version.short_effect.as_text())))
-    elif version.effect_chance != current_version.effect_chance:
-        ## If we're showing the entire effect, it'll include the effect chance
-        version_data[vg].append(_('Effect chance is {0}%').format(version.effect_chance))
-    current_version = version
-for change in c.move.move_effect.changelog:
-    version_data[change.changed_in].append(change.effect.as_html())
-change_version_groups = sorted(version_data, key=lambda vg: vg.id, reverse=True)
-%>
-% if version_data:
+% if c.move_history:
 ${h.h1(_('History'))}
 <dl>
-    % for version_group in change_version_groups:
+    % for version_group, messages in c.move_history:
     <dt>Before ${h.pokedex.version_icons(*version_group.versions)}</dt>
     <dd>
-        % for message in version_data[version_group]:
-            ${message |n}
+        % for attr, version in messages:
+            % if attr == 'type_id':
+                ${h.literal(_('Type is {0}. ').format(h.pokedex.type_link(version.type)))}
+            % elif attr == 'power':
+                ${_('Has {0} power.').format(version.power)}
+            % elif attr == 'accuracy':
+                ${_('Has {0}% accuracy.').format(version.accuracy)}
+            % elif attr == 'pp':
+                ${_('Has {0}% PP.').format(version.pp)}
+            % elif attr == 'effect_id':
+                ${h.literal(_('Effect is: {0}').format(version.short_effect.as_text()))}
+            % elif attr == 'effect_chance':
+                ${_('Effect chance is {0}%').format(version.effect_chance)}
+            % elif attr == 'effect_change':
+                ${version.effect.as_html() |n}
+            % else:
+                <% raise ValueError(attr) %>
+            % endif
         % endfor
     </dd>
     % endfor

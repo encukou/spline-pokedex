@@ -1480,6 +1480,21 @@ class PokedexController(PokedexBaseController):
         # Grab list of all the version groups with tutor moves
         c.move_tutor_version_groups = _move_tutor_version_groups(c.pokemon)
 
+        ### History
+        version_data = defaultdict(list)
+        current_version = c.move.default_version
+        for version in sorted(c.move.versions, key=lambda v: v.version_group.order, reverse=True):
+            vg = current_version.version_group
+            for attr in 'type_id power accuracy pp effect_id effect_chance'.split():
+                # XXX: Ignore effect_chance changes if effect changed entirely.
+                if getattr(version, attr) != getattr(current_version, attr):
+                    version_data[vg].append((attr, version))
+            current_version = version
+        for change in c.move.move_effect.changelog:
+            version_data[change.changed_in].append(('effect_change', change))
+        c.move_history = list(version_data.items())
+        c.move_history.sort(key=lambda vg_lst: vg_lst[0].order, reverse=True)
+
         return
 
 
