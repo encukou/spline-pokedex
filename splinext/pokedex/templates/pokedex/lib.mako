@@ -282,6 +282,7 @@ collapse_key = h.pokedex.collapse_flavor_text_key(literal=obdurate)
 %>
 <dl class="dex-flavor-text${' ' if classes else ''}${classes}">
 % for generation, group in h.pokedex.group_by_generation(flavor_text):
+% if generation:
 <dt class="dex-flavor-generation">${h.pokedex.generation_icon(generation)}</dt>
 <dd>
   <dl>
@@ -291,6 +292,11 @@ collapse_key = h.pokedex.collapse_flavor_text_key(literal=obdurate)
   % endfor
   </dl>
 </dd>
+% else:
+% for versions, text in h.pokedex.collapse_versions(group, key=collapse_key):
+<p class="dex-flavor-text${' ' if classes else ''}${classes}${' dex-obdurate' if obdurate else ''}">${text}</p>
+% endfor
+% endif
 % endfor
 </dl>
 </%def>

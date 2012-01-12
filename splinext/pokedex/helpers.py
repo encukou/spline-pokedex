@@ -89,12 +89,14 @@ def render_flavor_text(flavor_text, literal=False):
         # Soft hyphens followed by newlines vanish.
         # Letter-hyphen-newline becomes letter-hyphen, to preserve real
         # hyphenation.
+        # Blank lines become linebreaks.
         # Any other newline becomes a space.
         html = flavor_text.replace(u'\f',       u'\n') \
                           .replace(u'\u00ad\n', u'') \
                           .replace(u'\u00ad',   u'') \
                           .replace(u' -\n',     u' - ') \
                           .replace(u'-\n',      u'-') \
+                          .replace(u'\n\n',     u'<br>') \
                           .replace(u'\n',       u' ')
 
     return h.literal(html)
@@ -124,12 +126,19 @@ def get_generation_key(sample_object):
 
     Tries x.generation, x.version_group.generation, and x.version.generation.
     """
+    def with_fallback(func):
+        def f(thing):
+            try:
+                return func(thing)
+            except AttributeError:
+                return None
+        return f
     if hasattr(sample_object, 'generation'):
-        return attrgetter('generation')
+        return with_fallback(attrgetter('generation'))
     elif hasattr(sample_object, 'version_group'):
-        return (lambda x: x.version_group.generation)
+        return with_fallback(lambda x: x.version_group.generation)
     elif hasattr(sample_object, 'version'):
-        return (lambda x: x.version.generation)
+        return with_fallback(lambda x: x.version.generation)
     raise AttributeError
 
 def collapse_versions(things, key):
@@ -207,6 +216,9 @@ def version_icons(*versions, **kwargs):
     version_icons = u''
     comma = chain([u''], repeat(u', '))
     for version in versions:
+        if not version:
+            continue
+
         # Convert version to string if necessary
         if isinstance(version, basestring):
             identifier = filename_from_name(version)
