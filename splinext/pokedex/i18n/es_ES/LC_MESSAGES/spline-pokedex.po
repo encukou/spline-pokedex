@@ -1,0 +1,1868 @@
+# Spanish (Spain) translations for spline-pokedex.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the spline-pokedex
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  spline\n"
+"Report-Msgid-Bugs-To: http://bugs.veekun.com/projects/spline/issues\n"
+"POT-Creation-Date: 2012-01-12 19:28+0100\n"
+"PO-Revision-Date: 2012-01-12 19:33+0100\n"
+"Last-Translator: EnCuKou <encukou@gmail.com>\n"
+"Language-Team: es_ES <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.4\n"
+
+msgid "url|pokemondpds"
+msgstr ""
+
+msgid "url|worldexchange"
+msgstr ""
+
+msgid "url|common"
+msgstr ""
+
+msgid "url|gts"
+msgstr ""
+
+#, fuzzy
+msgid "url|dex"
+msgstr "dex"
+
+msgid "url|media"
+msgstr ""
+
+msgid "url|lookup"
+msgstr ""
+
+msgid "url|suggest"
+msgstr ""
+
+msgid "url|parse_size"
+msgstr ""
+
+msgid "url|moves"
+msgstr ""
+
+msgid "url|search"
+msgstr ""
+
+msgid "url|pokemon"
+msgstr ""
+
+#, fuzzy
+msgid "url|abilities"
+msgstr "Habilidades"
+
+msgid "url|items"
+msgstr ""
+
+msgid "url|locations"
+msgstr ""
+
+#, fuzzy
+msgid "url|natures"
+msgstr "Naturalezas"
+
+msgid "url|flavor"
+msgstr ""
+
+msgid "url|types"
+msgstr ""
+
+#, fuzzy
+msgid "url|gadgets"
+msgstr "Artilugios"
+
+msgid "url|chain_breeding"
+msgstr ""
+
+#, fuzzy
+msgid "url|compare_pokemon"
+msgstr "Compara Pokémon"
+
+msgid "url|pokeballs"
+msgstr ""
+
+#, fuzzy
+msgid "url|stat_calculator"
+msgstr "Calculadora Estadística"
+
+msgid "url|whos_that_pokemon"
+msgstr ""
+
+msgid "url|api"
+msgstr ""
+
+msgid "Pokédex"
+msgstr "Pokédex"
+
+msgid "Core pages"
+msgstr "Páginas centrales"
+
+msgid "Pokémon"
+msgstr "Pokémon"
+
+msgid "Awesome search"
+msgstr "Búsqueda genial"
+
+msgid "Moves"
+msgstr "Movimientos"
+
+msgid "Types"
+msgstr "Tipos"
+
+msgid "Abilities"
+msgstr "Habilidades"
+
+msgid "Items"
+msgstr "Objetos"
+
+msgid "Natures"
+msgstr "Naturalezas"
+
+msgid "Gadgets"
+msgstr "Artilugios"
+
+msgid "Compare Pokémon"
+msgstr "Compara Pokémon"
+
+msgid "Pokéball performance"
+msgstr "Rendimiento de los Pokéballs"
+
+msgid "Stat calculator"
+msgstr "Calculadora Estadística"
+
+msgid "Etc."
+msgstr "Etc."
+
+msgid "Downloads"
+msgstr "Descargas."
+
+#. Py2Format
+#, python-format
+msgid "Generation %d"
+msgstr "Generación %d"
+
+#. Py2Format
+#, python-format
+msgid "damage class: description|%s: %s"
+msgstr "damage class: description|%s: %s"
+
+msgid "genderless"
+msgstr "sin género"
+
+msgid "always male"
+msgstr "siempre macho"
+
+msgid "⅞ male, ⅛ female"
+msgstr "⅞ macho, ⅛ hembra"
+
+msgid "¾ male, ¼ female"
+msgstr "¾ macho, ¼ hembra"
+
+msgid "⅝ male, ⅜ female"
+msgstr "⅝ macho, ⅜ hembra"
+
+msgid "½ male, ½ female"
+msgstr "½ macho, ½ hembra"
+
+msgid "⅜ male, ⅝ female"
+msgstr "⅜ macho, ⅝ hembra"
+
+msgid "¼ male, ¾ female"
+msgstr "¼ macho, ¾ hembra"
+
+msgid "⅛ male, ⅞ female"
+msgstr "⅛ macho, ⅞ hembra"
+
+msgid "always female"
+msgstr "siempre hembra"
+
+msgid "an"
+msgstr ""
+
+msgid "a"
+msgstr ""
+
+msgid "Level up"
+msgstr "Levanta el nivel"
+
+msgid "Trade"
+msgstr "Intercambio"
+
+msgid "Use {article} {item}"
+msgstr ""
+
+#. Py3Format
+msgid ""
+"Evolve {from_pokemon} ({to_pokemon} will consume a Poké Ball and appear "
+"in a free party slot)"
+msgstr ""
+"Evoluciona {from_pokemon} ({to_pokemon} ingresará con espacio en el "
+"equipo y un Poké Ball en la mochila.) "
+
+msgid "Do something"
+msgstr "Hacer algo"
+
+#. Py3Format
+msgid "{0}s only"
+msgstr "Solo {0}s"
+
+#. Py3Format
+msgid "during the {0}"
+msgstr "Durante la {0}"
+
+#. Py3Format
+msgid "starting at level {0}"
+msgstr "a partir de nivel {0}"
+
+msgid "around {0}"
+msgstr "alrededor {0}"
+
+msgid "while holding {article} {item}"
+msgstr ""
+
+msgid "knowing {0}"
+msgstr ""
+
+#. Py3Format
+msgid "with at least {0} happiness"
+msgstr ""
+
+#. Py3Format
+msgid "with at least {0} beauty"
+msgstr ""
+
+msgid "<"
+msgstr ""
+
+msgid ">"
+msgstr ""
+
+msgid "="
+msgstr ""
+
+#. Py3Format
+msgid "when Attack {0} Defense"
+msgstr ""
+
+msgid "with {0} in the party"
+msgstr ""
+
+msgid "in exchange for {0}"
+msgstr ""
+
+msgid ""
+"Pretty much anything that exists in the Pokémon world can be found\n"
+"in the Pokédex.  Just type in a name and try it out."
+msgstr ""
+
+msgid "Or you can browse by category:"
+msgstr ""
+
+msgid "plural|Pokémon"
+msgstr ""
+
+msgid "Finding stuff"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid ""
+"Lookup works the same way anywhere you can type a name.\n"
+"(\"Lookup\" refers to entering a name to find something(s) specific.\n"
+"\"Searching\" is <a href=\"%s\">a bit more complicated</a>.)"
+msgstr ""
+
+#. Py3Format
+msgid "Case ({kecleon} vs {KECLEON}) and extra spaces are ignored."
+msgstr ""
+
+msgid "kecleon"
+msgstr ""
+
+msgid "KECLEON"
+msgstr ""
+
+msgid ""
+"If you enter something that's misspelled or could be one of several\n"
+"pages, you'll get a list of up to 10 guesses or matches to choose from."
+msgstr ""
+
+#. Py3Format
+#. Feel free to leave out the Psychic example if your language has unambiguous
+#. names.
+msgid ""
+"You can specify what sort of thing you're looking for by putting one\n"
+"or more before a colon, e.g. {pokemon_Kangaskhan} or "
+"{item_move_Metronome}.\n"
+"This is mostly useful when looking things up by national id "
+"({pokemon_151}),\n"
+"because moves and types have ids, too.  It's also helpful when looking up"
+"\n"
+"something ambiguous ({move_Psychic} vs {type_psychic}) if you want to "
+"skip the\n"
+"disambiguation page."
+msgstr ""
+
+msgid "pokemon:Kangaskhan"
+msgstr ""
+
+msgid "item,move:metronome"
+msgstr ""
+
+msgid "pokemon:151"
+msgstr ""
+
+msgid "move:Psychic"
+msgstr ""
+
+msgid "type:psychic"
+msgstr ""
+
+#. Py3Format
+#. This is a tough one, don't get confused.
+#. {charge} will become a link to a search for "charge".
+#. {link_tackle} will become a link to the move that's called Tackle in
+#. English.
+#. {link_charge} will become a link to the move that's called Charge in
+#. English.
+#. {fr_charge} will become a link to the "@fr:charge" search.
+#. {en_charge} will become a link to the "@en:charge" search.
+#. {fr_move_charge} will become a link to the "@fr,move:charge" search.
+msgid ""
+"Similarly, you can restrict lookup by language.\n"
+"{charge} will offer both {link_tackle} and\n"
+"{link_charge}, because Tackle's French name is \"Charge\".\n"
+"If you wanted one or the other, you could enter {fr_charge} or "
+"{en_charge}.\n"
+"These also combine with the prefixes above, as in {fr_move_charge}."
+msgstr ""
+
+msgid "move name|tackle"
+msgstr ""
+
+msgid "move|Tackle"
+msgstr ""
+
+msgid "move name|charge"
+msgstr ""
+
+msgid "move|Charge"
+msgstr ""
+
+msgid "Lookup understands the following:"
+msgstr ""
+
+msgid "National IDs"
+msgstr ""
+
+msgid "pokemon:352"
+msgstr ""
+
+msgid "move:1"
+msgstr ""
+
+msgid "Names"
+msgstr ""
+
+msgid "Eevee"
+msgstr ""
+
+msgid "Rough Skin"
+msgstr ""
+
+msgid "Super Rod"
+msgstr ""
+
+msgid "Route 202"
+msgstr ""
+
+msgid "Pokémon forms"
+msgstr ""
+
+msgid "Speed Deoxys"
+msgstr ""
+
+msgid "Wash Rotom"
+msgstr ""
+
+msgid "Jump to subpages"
+msgstr ""
+
+msgid "eevee flavor"
+msgstr ""
+
+msgid "eevee locations"
+msgstr ""
+
+msgid "Foreign names"
+msgstr ""
+
+msgid "Misspelled names"
+msgstr ""
+
+msgid "Dragontie"
+msgstr ""
+
+msgid "Synthesys"
+msgstr ""
+
+msgid "psychich"
+msgstr ""
+
+msgid "Thunder Shock"
+msgstr ""
+
+msgid "Wildcards"
+msgstr ""
+
+msgid "pokemon:????"
+msgstr ""
+
+msgid "move:thunder*"
+msgstr ""
+
+msgid "item:* ball"
+msgstr ""
+
+msgid "\"Random\""
+msgstr ""
+
+msgid "pokemon:random"
+msgstr ""
+
+msgid "move:random"
+msgstr ""
+
+msgid "random"
+msgstr ""
+
+msgid "Magic words"
+msgstr ""
+
+msgid "???"
+msgstr ""
+
+msgid "obdurate"
+msgstr ""
+
+msgid ""
+"You can use anything on this page however you want.\n"
+"Nintendo made these, not me, so I don't claim to own them in any way.\n"
+"If you want to credit me for collecting or ripping them, that's cool;\n"
+"if not, that's cool too.  Enjoy."
+msgstr ""
+
+msgid "Sprite packs"
+msgstr ""
+
+msgid ""
+"These are tarballs of all the sprites from each generation.\n"
+"If your zip program can't open them, try\n"
+"<a href=\"http://www.7-zip.org/\">7-zip</a>."
+msgstr ""
+
+msgid "Main Pokémon sprites"
+msgstr ""
+
+msgid "Generation I"
+msgstr ""
+
+msgid "— all sprites from Green, Red, Blue, and Yellow"
+msgstr ""
+
+msgid "Generation II"
+msgstr ""
+
+msgid "— all sprites from Gold, Silver, and Crystal (including animations)"
+msgstr ""
+
+msgid "Generation III"
+msgstr ""
+
+msgid ""
+"— all sprites from Ruby, Sapphire, Emerald (including animations), "
+"FireRed, and LeafGreen"
+msgstr ""
+
+msgid "Generation IV"
+msgstr ""
+
+msgid "— all sprites from Diamond, Pearl, Platinum, HeartGold, and SoulSilver"
+msgstr ""
+
+msgid "Generation V"
+msgstr ""
+
+msgid "— all sprites from Black and White"
+msgstr ""
+
+msgid "Others"
+msgstr ""
+
+msgid "Pokémon icons"
+msgstr ""
+
+msgid "— sprites used in the Pokémon screen (no animations)"
+msgstr ""
+
+msgid "Overworld"
+msgstr ""
+
+msgid ""
+"— overworld Pokémon sprites from HeartGold/SoulSilver, plus a few "
+"overworld trainers"
+msgstr ""
+
+msgid "Footprints"
+msgstr ""
+
+msgid "Trozei sprites"
+msgstr ""
+
+msgid "— sprite for each Pokémon from Pokémon Trozei"
+msgstr ""
+
+msgid "— includes large sprites from Berry Tags and the Sinnoh Underground"
+msgstr ""
+
+msgid "Chrome"
+msgstr ""
+
+msgid ""
+"— sprites for types, contest types, habitats, shiny leaves, ribbons, et "
+"al."
+msgstr ""
+
+msgid "Main sprite montages"
+msgstr ""
+
+msgid ""
+"Every Pokémon combined into a single large image by the <a "
+"href=\"http://www.imagemagick.org/script/montage.php\"><code>montage</code></a>"
+" program."
+msgstr ""
+
+msgid "Game Boy"
+msgstr ""
+
+msgid "Super Game Boy"
+msgstr ""
+
+msgid "Game Boy Color"
+msgstr ""
+
+msgid "normal"
+msgstr ""
+
+msgid "shiny"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s back"
+msgstr ""
+
+msgid "frame 2"
+msgstr ""
+
+msgid "frame 2 shiny"
+msgstr ""
+
+msgid "shiny frame 2"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s ♂ vs ♀"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s front"
+msgstr ""
+
+msgid "facing forwards"
+msgstr ""
+
+msgid "facing right"
+msgstr ""
+
+msgid "facing backwards"
+msgstr ""
+
+msgid "shiny forwards"
+msgstr ""
+
+msgid "shiny right"
+msgstr ""
+
+msgid "shiny backwards"
+msgstr ""
+
+msgid "Pokémon footprints"
+msgstr ""
+
+msgid "Pokémon sugimori art, shrunk down"
+msgstr ""
+
+msgid "Berries"
+msgstr ""
+
+msgid "Pokémon cries"
+msgstr ""
+
+msgid "— encoded as Ogg Vorbis quality 3"
+msgstr ""
+
+msgid "Sugimori art"
+msgstr ""
+
+msgid "— official art for every Pokémon"
+msgstr ""
+
+msgid "Full database as gzipped SQLite"
+msgstr ""
+
+msgid ""
+"But see <a "
+"href=\"http://bugs.veekun.com/projects/pokedex/wiki/GettingData\">the "
+"documentation</a> for other databases or real instructions."
+msgstr ""
+
+msgid "Source code for everything"
+msgstr ""
+
+msgid ""
+"use \"snapshot\" links or <a "
+"href=\"http://bugs.veekun.com/projects/veekun/wiki/Documentation\">the "
+"real way</a>"
+msgstr ""
+
+msgid "dex"
+msgstr "dex"
+
+msgid "Downloads - Pokédex"
+msgstr ""
+
+msgid "Essentials"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+msgid "Effect"
+msgstr ""
+
+msgid "Moves affected"
+msgstr ""
+
+msgid "anchor|moves"
+msgstr ""
+
+msgid "History"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "Before %s"
+msgstr ""
+
+msgid "Flavor"
+msgstr ""
+
+msgid "Flavor Text"
+msgstr ""
+
+msgid "Foreign Names"
+msgstr ""
+
+msgid "External Links"
+msgstr ""
+
+msgid "Bulbapedia"
+msgstr ""
+
+msgid "Legendary Pokémon"
+msgstr ""
+
+msgid "Serebii.net"
+msgstr ""
+
+msgid "Smogon"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s - Abilities"
+msgstr ""
+
+msgid "Ability list"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Gen"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "idspispopd"
+msgstr ""
+
+msgid "iddqd"
+msgstr ""
+
+msgid "cass"
+msgstr ""
+
+msgid "uuddlrlrba"
+msgstr ""
+
+msgid "hold down+b"
+msgstr ""
+
+msgid "talk to oak 250 times"
+msgstr ""
+
+msgid "its a secret to everyone"
+msgstr ""
+
+msgid "YEAH"
+msgstr ""
+
+msgid "Success"
+msgstr ""
+
+msgid "Cheat Unlocked"
+msgstr ""
+
+msgid "pocket"
+msgstr ""
+
+msgid "Cost"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s Pokédollars"
+msgstr ""
+
+msgid "Can't be bought or sold"
+msgstr ""
+
+msgid "Flags"
+msgstr ""
+
+msgid "Special move effects"
+msgstr ""
+
+msgid "Fling"
+msgstr ""
+
+msgid "Natural Gift"
+msgstr ""
+
+#. Py3Format
+msgid "Inflicts regular {type} damage with {power} power"
+msgstr ""
+
+msgid "Flavor text"
+msgstr ""
+
+msgid "Berry tag"
+msgstr ""
+
+msgid "Growth"
+msgstr ""
+
+msgid "Maximum harvest"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s berries"
+msgstr ""
+
+msgid "Time to grow"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s hours per stage"
+msgid_plural "%s hour per stage"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Py2Format
+#, python-format
+msgid "%s hour total"
+msgid_plural "%s hours total"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Py2Format
+#, python-format
+msgid "%s/%s hours"
+msgid_plural "%s/%s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Soil drying rate"
+msgstr ""
+
+msgid "Taste"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "(raises %s)"
+msgstr ""
+
+msgid "—"
+msgstr ""
+
+msgid "Smoothness"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Firmness"
+msgstr ""
+
+msgid "Held by wild Pokémon"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s pocket"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s - Items"
+msgstr ""
+
+msgid "Pick your pocket:"
+msgstr ""
+
+msgid "Num"
+msgstr ""
+
+msgid "Item"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s pocket - Items"
+msgstr ""
+
+msgid "Search: "
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Locations"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s - Locations"
+msgstr ""
+
+msgid "Hmmm, there are several things with that name.  Did you mean:"
+msgstr ""
+
+msgid "It seems you don't know how to spell.  Did you mean one of these?"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "The %s"
+msgstr ""
+
+#. Py3Format
+msgid ""
+"Boy, this is a lot of matches!  Maybe you want to use the full-blown <a "
+"href=\"{pokesearch}\">Pokémon search</a> or <a href=\"{movesearch}\">move"
+" search</a>, or check the various <a href=\"{dexurl}\">lists of "
+"everything and lookup help</a>"
+msgstr ""
+
+msgid "Need help?"
+msgstr ""
+
+msgid "Disambiguation"
+msgstr ""
+
+msgid "Damage Dealt"
+msgstr ""
+
+msgid "Stats"
+msgstr ""
+
+msgid "Power"
+msgstr ""
+
+msgid "—  (no damage)"
+msgstr ""
+
+msgid "*  (no fixed power)"
+msgstr ""
+
+#. Py3Format
+msgid "{power}; percentile {perc:.1f}"
+msgstr ""
+
+msgid "Accuracy"
+msgstr ""
+
+msgid "—  (cannot miss)"
+msgstr ""
+
+#. Py3Format
+msgid "≈ {0:.1f} power"
+msgstr ""
+
+msgid "PP"
+msgstr ""
+
+msgid "n/a"
+msgstr ""
+
+msgid "Target"
+msgstr ""
+
+msgid "(fast)"
+msgstr ""
+
+msgid "(slow)"
+msgstr ""
+
+msgid "(normal)"
+msgstr ""
+
+msgid "Machines"
+msgstr ""
+
+msgid "Not a TM"
+msgstr ""
+
+#. Py3Format
+msgid "HM{number:02d}"
+msgstr ""
+
+#. Py3Format
+msgid "TM{number:02d}"
+msgstr ""
+
+msgid "Contests"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s Contest"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Appeal"
+msgstr ""
+
+msgid "Jam"
+msgstr ""
+
+msgid "Use after"
+msgstr ""
+
+msgid "Use before"
+msgstr ""
+
+msgid "Similar moves"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "These moves all have the same effect as %s"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "No other moves have the same effect as %s"
+msgstr ""
+
+msgid "Azure Heights"
+msgstr ""
+
+msgid "PsyPoke"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s - Moves"
+msgstr ""
+
+msgid "Move lists"
+msgstr ""
+
+#. Py3Format
+msgid ""
+"The following are all links to the <a href=\"{url}\">move search</a>, so "
+"you can filter and sort however you want."
+msgstr ""
+
+msgid "EVERY MOVE EVER"
+msgstr ""
+
+msgid "Red/Blue/Yellow"
+msgstr ""
+
+msgid "Gold/Silver/Crystal"
+msgstr ""
+
+msgid "Ruby/Sapphire/Emerald"
+msgstr ""
+
+msgid "Diamond/Pearl/Platinum"
+msgstr ""
+
+msgid "Black/White"
+msgstr ""
+
+msgid "Same as:"
+msgstr ""
+
+msgid "Inverse of"
+msgstr ""
+
+msgid ""
+"This nature is neutral; it does not affect stats and causes no flavor "
+"preference."
+msgstr ""
+
+msgid "Stat changes"
+msgstr ""
+
+msgid "+10%"
+msgstr ""
+
+msgid "-10%"
+msgstr ""
+
+msgid "Taste preference"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "Likes %s; good for"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "Hates %s; bad for"
+msgstr ""
+
+msgid "Not-so-essentials"
+msgstr ""
+
+msgid "Battle Style Preferences"
+msgstr ""
+
+msgid "These only affect the Battle Palace and Verdanturf Battle Tent."
+msgstr ""
+
+msgid "> 50% HP"
+msgstr ""
+
+msgid "< 50% HP"
+msgstr ""
+
+msgid "Pokéathlon Stats"
+msgstr ""
+
+#. Py3Format
+msgid "Up to {change} {stat}"
+msgstr ""
+
+msgid ""
+"These Pokémon are selected automatically, based on having roughly equal "
+"stats.  Don't take this as carefully-constructed tournament advice."
+msgstr ""
+
+#. Py3Format
+msgid ""
+"These Pokémon are selected automatically, based on having high {histat} "
+"and low {lostat}. Don't take this as carefully-constructed tournament "
+"advice."
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s - Natures"
+msgstr ""
+
+msgid "Nature list"
+msgstr ""
+
+msgid "Sort by name"
+msgstr ""
+
+msgid "Sort by stat"
+msgstr ""
+
+msgid "Likes flavor"
+msgstr ""
+
+msgid "Hates flavor"
+msgstr ""
+
+msgid "Damage Taken"
+msgstr ""
+
+msgid "Pokédex Numbers"
+msgstr ""
+
+msgid "Introduced in"
+msgstr ""
+
+msgid "Breeding"
+msgstr ""
+
+msgid "Gender"
+msgstr ""
+
+msgid "Egg groups"
+msgstr ""
+
+msgid "Hatch counter"
+msgstr ""
+
+msgid "Steps to hatch"
+msgstr ""
+
+msgid "With Magma Armor or Flame Body"
+msgstr ""
+
+msgid "Compatibility"
+msgstr ""
+
+msgid ""
+"Ditto can breed with any other breedable Pokémon, but can never produce a"
+" Ditto egg."
+msgstr ""
+
+#. Py3Format
+msgid "{0} cannot breed."
+msgstr ""
+
+msgid "Training"
+msgstr ""
+
+msgid "Base EXP"
+msgstr ""
+
+msgid "EXP at level"
+msgstr ""
+
+msgid "Effort points"
+msgstr ""
+
+msgid "Capture rate"
+msgstr ""
+
+msgid "Base happiness"
+msgstr ""
+
+msgid "Growth rate"
+msgstr ""
+
+msgid "Wild held items"
+msgstr ""
+
+msgid "nothing"
+msgstr ""
+
+msgid "Evolution"
+msgstr ""
+
+msgid "See also:"
+msgstr ""
+
+msgid "Compare this family"
+msgstr ""
+
+msgid "Baby"
+msgstr ""
+
+msgid "Basic"
+msgstr ""
+
+msgid "Stage 1"
+msgstr ""
+
+msgid "Stage 2"
+msgstr ""
+
+msgid "Either parent must hold "
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s Forms"
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "Effort"
+msgstr ""
+
+msgid "Percentile rank"
+msgstr ""
+
+msgid "Pctile"
+msgstr ""
+
+msgid "Min IVs"
+msgstr ""
+
+msgid "Max IVs"
+msgstr ""
+
+msgid "Detailed flavor page covering all versions"
+msgstr ""
+
+msgid "Sprites"
+msgstr ""
+
+msgid "Miscellany"
+msgstr ""
+
+msgid "Species"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Cry"
+msgstr ""
+
+msgid "Habitat"
+msgstr ""
+
+msgid "Footprint"
+msgstr ""
+
+msgid "Shape"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "Weight"
+msgstr ""
+
+msgid "Ridiculously detailed breakdown"
+msgstr ""
+
+msgid "header id|links"
+msgstr ""
+
+msgid "Gengar and Haunter's Pokémon Dungeon"
+msgstr ""
+
+#. Py3Format
+msgid "{name} – Pokémon #{number}"
+msgstr ""
+
+msgid "Search:"
+msgstr ""
+
+msgid "Pokédex Description"
+msgstr ""
+
+msgid "anchor|pokedex"
+msgstr ""
+
+msgid "Main Game Portraits"
+msgstr ""
+
+msgid "anchor|main-sprites"
+msgstr ""
+
+msgid "Forms"
+msgstr ""
+
+msgid "Red & Green, Red & Blue, Yellow"
+msgstr ""
+
+msgid "GB"
+msgstr ""
+
+msgid "SGB"
+msgstr ""
+
+msgid "GBC"
+msgstr ""
+
+msgid "Gold & Silver, Crystal"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Shiny"
+msgstr ""
+
+msgid "Ruby & Sapphire, Emerald, FireRed & LeafGreen"
+msgstr ""
+
+msgid "Diamond & Pearl, Platinum, HeartGold & SoulSilver"
+msgstr ""
+
+msgid "(male)"
+msgstr ""
+
+msgid "(female)"
+msgstr ""
+
+msgid "Black & White"
+msgstr ""
+
+msgid "Miscellaneous Game Art"
+msgstr ""
+
+msgid "anchor|misc-sprites"
+msgstr ""
+
+msgid "HeartGold & SoulSilver Overworld"
+msgstr ""
+
+msgid "overworld sprite|Left"
+msgstr ""
+
+msgid "overworld sprite|Down"
+msgstr ""
+
+msgid "overworld sprite|Up"
+msgstr ""
+
+msgid "overworld sprite|Right"
+msgstr ""
+
+msgid "Female"
+msgstr ""
+
+#, fuzzy
+msgid "Other Images"
+msgstr "Páginas centrales"
+
+msgid "anchor|other"
+msgstr ""
+
+msgid "Official artwork by Ken Sugimori"
+msgstr ""
+
+#. Py3Format
+msgid "{name} flavor – Pokémon #{number}"
+msgstr ""
+
+msgid "Pokémon lists"
+msgstr ""
+
+#. Py3Format
+msgid ""
+"The following are all links to the <a href=\"{url}\">Pokémon search</a>, "
+"so you can filter and sort however you want."
+msgstr ""
+
+msgid "By generation"
+msgstr ""
+
+msgid "EVERY POKéMON EVER"
+msgstr ""
+
+msgid "By regional Pokédex"
+msgstr ""
+
+msgid "Johto"
+msgstr ""
+
+msgid "Hoenn"
+msgstr ""
+
+msgid "Sinnoh"
+msgstr ""
+
+msgid "Miscellaneous interesting lists"
+msgstr ""
+
+msgid "Basic Pokémon"
+msgstr ""
+
+msgid "Fully-evolved Pokémon"
+msgstr ""
+
+msgid "Non-evolving Pokémon"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s locations"
+msgstr ""
+
+#. Py3Format
+msgid "{pkmn} locations - Pokémon #{id}"
+msgstr ""
+
+msgid "Damage Dealt/Taken"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid ""
+"\n"
+"In Generation IV, pure []{type:flying}-types become ???-type during "
+"[]{move:roost}.  This can be accomplished with\n"
+"[]{move:conversion}, []{move:conversion-2}, or the ability []{ability"
+":color-change}.  A Pokémon can legitimately have both\n"
+"Roost and one of these only through the use of []{move:mimic}, "
+"[]{move:sketch}, []{move:role-play}, or []{move:skill-swap}.\n"
+"(No Pokémon that has []{ability:trace} or []{ability:multitype} learns "
+"Roost, and Multitype cannot be copied.)\n"
+"\n"
+"Generation IV has [sprites for a ???-type Arceus](%s), even though Arceus"
+" cannot become ???-type through regular play.\n"
+"Eggs are purely ???-type before hatching before Generation V, and are "
+"displayed as such in the Generation III status\n"
+"screen.  In Generation V, the ??? type no longer exists.\n"
+msgstr ""
+
+#. Py3Format
+msgid "Formerly {0}-type moves"
+msgstr ""
+
+msgid "moves:former"
+msgstr ""
+
+msgid "Before"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s - Types"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "Showing part-%s types"
+msgstr ""
+
+msgid "If you like, show a secondary Pokémon type:"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid ""
+"\"Score\" is a simple count of how many other types a type is strong "
+"against or weak to.  Bigger is better."
+msgstr ""
+
+msgid "Move"
+msgstr ""
+
+msgid "Score"
+msgstr ""
+
+msgid ""
+"Have you spent the past six hours trying to catch Giratina in Ultra "
+"Balls?  Me, too!  What a jerk.  This gadget will tell you which ball is "
+"the best choice against your target, and about how long it'll take to "
+"catch."
+msgstr ""
+
+msgid "Target Pokémon"
+msgstr ""
+
+msgid "Specialty ball stuff"
+msgstr ""
+
+msgid ""
+"These affect the functionality of some specialty balls, but aren't part "
+"of the regular capture rate calculations.  You can skip them if you want."
+msgstr ""
+
+msgid "Pokéball, go!"
+msgstr ""
+
+msgid "Ball Success Rates"
+msgstr ""
+
+#. Py3Format
+msgid "{pokemon}'s capture rate: {rate}/255 or about {precent:.01f}%."
+msgstr ""
+
+msgid ""
+"Disclaimer: This is all approximate!  The game might still hate you more "
+"than these numbers indicate."
+msgstr ""
+
+msgid "And no, Up+B doesn't actually do anything."
+msgstr ""
+
+msgid "Legend: Ball wobbles"
+msgstr ""
+
+msgid "zero"
+msgstr ""
+
+msgid "one"
+msgstr ""
+
+msgid "two"
+msgstr ""
+
+msgid "three"
+msgstr ""
+
+msgid "times."
+msgstr ""
+
+msgid "Capture!"
+msgstr ""
+
+msgid "Mouseover for specifics."
+msgstr ""
+
+msgid "Ball"
+msgstr ""
+
+msgid "Chance to catch"
+msgstr ""
+
+msgid "Avg. tries"
+msgstr ""
+
+msgid "Requirement"
+msgstr ""
+
+msgid "Capture:"
+msgstr ""
+
+msgid "compare"
+msgstr ""
+
+msgid "Select up to eight Pokémon to compare their stats, moves, etc."
+msgstr ""
+
+msgid "Version to use for moves:"
+msgstr ""
+
+msgid "no matches"
+msgstr ""
+
+msgid "Compare:"
+msgstr ""
+
+msgid "Move left"
+msgstr ""
+
+msgid "remove"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Move right"
+msgstr ""
+
+msgid "Breeding + Training"
+msgstr ""
+
+msgid "Base stat total"
+msgstr ""
+
+msgid "Genus"
+msgstr ""
+
+msgid ""
+"WHIRLWIND EXPLANATION: Pokémon have a fixed, permanent score from 0 to 31"
+" for each stat that affects how good that stat can ever get."
+msgstr ""
+
+msgid ""
+"This calculator will figure out that score (called a \"gene\" or, more "
+"obtusely, an \"IV\") for you, so you can discard the <em>unworthy</em>.  "
+"It's more accurate for higher-level Pokémon, so it's helpful to go into a"
+" level 100 wifi battle with someone and check your Pokémon's stats from "
+"there."
+msgstr ""
+
+msgid "Crunch numbers"
+msgstr ""
+
+msgid "−10%"
+msgstr ""
+
+msgid "And for your copy/pasting pleasure:"
+msgstr ""
+
+msgid "HP"
+msgstr ""
+
+msgid "Physical"
+msgstr ""
+
+msgid "Special"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid ""
+"Uh-oh.  The set of stats you gave is totally impossible. Better double-"
+"check against your game."
+msgstr ""
+
+msgid ""
+"The most common problem is effort; if a Pokémon has been trained at all, "
+"it'll have some effort accumulated.  This affects its stats, and there's "
+"no way to know how much effort it has unless you've been keeping track.  "
+"Sorry."
+msgstr ""
+
+msgid ""
+"If you're desperate, you could try the effort-lowering berries (Pomeg et "
+"al.), which will reduce effort in a given stat by 10 at a time.  Drop "
+"every stat's effort until it won't drop any further, then try again."
+msgstr ""
+
+msgid ""
+"\"Stats\" are your Pokémon's actual stats, from the Summary screen in-"
+"game."
+msgstr ""
+
+msgid "\"Effort\" is accumulated as your Pokémon battles."
+msgstr ""
+
+msgid ""
+"If you don't know what this is, and your Pokémon has EVER battled or "
+"eaten a vitamin, this calculator CANNOT work.  Using Rare Candy is okay, "
+"though."
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "start over"
+msgstr ""
+
+msgid "Results"
+msgstr ""
+
+msgid "Start over"
+msgstr ""
+
+msgid "Nothing found."
+msgstr ""
+
+msgid "Move Search"
+msgstr ""
+
+msgid ""
+"Unless otherwise specified: matching moves must match ALL of the "
+"criteria, but can match ANY selections within a group."
+msgstr ""
+
+msgid "Anything left blank is ignored entirely."
+msgstr ""
+
+msgid "Damage class"
+msgstr ""
+
+msgid "Exact same effect as:"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Status ailment"
+msgstr ""
+
+msgid "Numbers"
+msgstr ""
+
+msgid "Moves must be learnable by at least one of these Pokémon:"
+msgstr ""
+
+msgid "Learned by"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Display and sorting"
+msgstr ""
+
+msgid "Drag or double-click us!"
+msgstr ""
+
+msgid "Formatting codes"
+msgstr ""
+
+msgid ""
+"e.g.: <code>* $name ($type)</code> becomes <code>&bull; Surf "
+"(water)</code>"
+msgstr ""
+
+msgid "button|Search"
+msgstr ""
+
+msgid "Reset form"
+msgstr ""
+
+msgid "Eff"
+msgstr ""
+
+msgid "Class"
+msgstr ""
+
+msgid "Acc"
+msgstr ""
+
+msgid "Pri"
+msgstr ""
+
+msgid "It seems you entered something bogus for:"
+msgstr ""
+
+msgid "Pokémon Search"
+msgstr ""
+
+msgid ""
+"Unless otherwise specified: matching Pokémon must match ALL of the "
+"criteria, but can match ANY selections within a group (e.g., evolution "
+"stage)."
+msgstr ""
+
+msgid "Generation"
+msgstr ""
+
+msgid ""
+"Understands single numbers (<code>50</code>); ranges "
+"(<code>17-29</code>); at-least (<code>100+</code>); at-most (<code>&lt; "
+"100</code>); approximations (<code>120~10</code> = <code>110-130</code>);"
+" and any combination of those (<code>20, 50-60, 90~5</code>)."
+msgstr ""
+
+msgid ""
+"Height and weight work the same way, but require units.  Anything is "
+"acceptable.  You can even use Pokémon names as units."
+msgstr ""
+
+msgid "Base stats"
+msgstr ""
+
+msgid "Breeding/Training"
+msgstr ""
+
+msgid "Look for:"
+msgstr ""
+
+msgid "Pokémon must have all of these moves:"
+msgstr ""
+
+msgid "e.g.: <code>* $id $name</code> becomes <code>&bull; 133 Eevee</code>"
+msgstr ""
+
+msgid "Ability"
+msgstr ""
+
+msgid "Attack"
+msgstr ""
+
+msgid "Atk"
+msgstr ""
+
+msgid "Hit Points"
+msgstr ""
+
+msgid "Initial hatch counter"
+msgstr ""
+
+msgid "Hatch"
+msgstr ""
+
+msgid "Egg Group"
+msgstr ""
+
+msgid ":)"
+msgstr ""
+
+msgid "Special Attack"
+msgstr ""
+
+msgid "SpA"
+msgstr ""
+
+msgid "Cap."
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "EXP"
+msgstr ""
+
+msgid "EXP to L100"
+msgstr ""
+
+msgid "Defense"
+msgstr ""
+
+msgid "Def"
+msgstr ""
+
+msgid "Special Defense"
+msgstr ""
+
+msgid "SpD"
+msgstr ""
+
+msgid "Spd"
+msgstr ""
+
+msgid "Steps"
+msgstr ""
+
+msgid "lookup widget|Pokédex"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Help!"
+msgstr ""
+
+msgid "lookup widget|Look up"
+msgstr ""
+

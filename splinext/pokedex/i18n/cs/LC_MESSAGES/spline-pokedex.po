@@ -1,0 +1,1935 @@
+# Czech translations for spline-pokedex.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the spline-pokedex
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  spline\n"
+"Report-Msgid-Bugs-To: http://bugs.veekun.com/projects/spline/issues\n"
+"POT-Creation-Date: 2012-01-12 19:28+0100\n"
+"PO-Revision-Date: 2012-01-12 19:33+0100\n"
+"Last-Translator: EnCuKou <encukou@gmail.com>\n"
+"Language-Team: cs <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.4\n"
+
+msgid "url|pokemondpds"
+msgstr "pokemondpds"
+
+msgid "url|worldexchange"
+msgstr "worldexchange"
+
+msgid "url|common"
+msgstr "common"
+
+msgid "url|gts"
+msgstr "gts"
+
+msgid "url|dex"
+msgstr "dex"
+
+msgid "url|media"
+msgstr "media"
+
+msgid "url|lookup"
+msgstr "hledani"
+
+msgid "url|suggest"
+msgstr "suggest"
+
+msgid "url|parse_size"
+msgstr "parse_size"
+
+msgid "url|moves"
+msgstr "utoky"
+
+msgid "url|search"
+msgstr "vyhledavani"
+
+msgid "url|pokemon"
+msgstr "pokemoni"
+
+msgid "url|abilities"
+msgstr "schopnosti"
+
+msgid "url|items"
+msgstr "veci"
+
+msgid "url|locations"
+msgstr "mista"
+
+msgid "url|natures"
+msgstr "povahy"
+
+msgid "url|flavor"
+msgstr "omacka"
+
+msgid "url|types"
+msgstr "typy"
+
+msgid "url|gadgets"
+msgstr "pomucky"
+
+msgid "url|chain_breeding"
+msgstr "krizeni"
+
+msgid "url|compare_pokemon"
+msgstr "porovnat_pokemony"
+
+msgid "url|pokeballs"
+msgstr "pokebally"
+
+msgid "url|stat_calculator"
+msgstr "kalkulacka_statu"
+
+msgid "url|whos_that_pokemon"
+msgstr "ktery_je_to_pokemon"
+
+msgid "url|api"
+msgstr "api"
+
+msgid "Pokédex"
+msgstr "Pokédex"
+
+msgid "Core pages"
+msgstr "Hlavní stránky"
+
+msgid "Pokémon"
+msgstr "Pokémon"
+
+msgid "Awesome search"
+msgstr "Úžasné vyhledávání"
+
+msgid "Moves"
+msgstr "Útoky"
+
+msgid "Types"
+msgstr "Typy"
+
+msgid "Abilities"
+msgstr "Schopnosti"
+
+msgid "Items"
+msgstr "Věci"
+
+msgid "Natures"
+msgstr "Povahy"
+
+msgid "Gadgets"
+msgstr "Pomůcky"
+
+msgid "Compare Pokémon"
+msgstr "Porovnat pokémony"
+
+msgid "Pokéball performance"
+msgstr "Účinnost pokéballů"
+
+msgid "Stat calculator"
+msgstr "Kalkulačka statů"
+
+msgid "Etc."
+msgstr "Etc."
+
+msgid "Downloads"
+msgstr "Stáhnout"
+
+#. Py2Format
+#, python-format
+msgid "Generation %d"
+msgstr "%d. generace"
+
+#. Py2Format
+#, python-format
+msgid "damage class: description|%s: %s"
+msgstr "%s: %s"
+
+msgid "genderless"
+msgstr "bezpohlavní"
+
+msgid "always male"
+msgstr "vždy sameček"
+
+msgid "⅞ male, ⅛ female"
+msgstr "⅞ samečků, ⅛ samiček"
+
+msgid "¾ male, ¼ female"
+msgstr "¾ samečků, ¼ samiček"
+
+msgid "⅝ male, ⅜ female"
+msgstr "⅝ samečků, ⅜ samiček"
+
+msgid "½ male, ½ female"
+msgstr "½ samečků, ½ samiček"
+
+msgid "⅜ male, ⅝ female"
+msgstr "⅜ samečků, ⅝ samiček"
+
+msgid "¼ male, ¾ female"
+msgstr "¼ samečků, ¾ samiček"
+
+msgid "⅛ male, ⅞ female"
+msgstr "⅛ samečků, ⅞ samiček"
+
+msgid "always female"
+msgstr "vždy samička"
+
+msgid "an"
+msgstr ""
+
+msgid "a"
+msgstr ""
+
+msgid "Level up"
+msgstr "Úrovní"
+
+msgid "Trade"
+msgstr "Výměnou"
+
+msgid "Use {article} {item}"
+msgstr "Použitím {item}"
+
+#. Py3Format
+msgid ""
+"Evolve {from_pokemon} ({to_pokemon} will consume a Poké Ball and appear "
+"in a free party slot)"
+msgstr ""
+"Vyvinutím {from_pokemon} ({to_pokemon} sebere Poké Ball a objeví se na "
+"volném místě v partě)"
+
+msgid "Do something"
+msgstr "Nějak"
+
+#. Py3Format
+msgid "{0}s only"
+msgstr "Jen {0}"
+
+#. Py3Format
+msgid "during the {0}"
+msgstr "během {0}"
+
+#. Py3Format
+msgid "starting at level {0}"
+msgstr "od úrovně {0}"
+
+msgid "around {0}"
+msgstr "poblíž {0}"
+
+msgid "while holding {article} {item}"
+msgstr "když drží {item}"
+
+msgid "knowing {0}"
+msgstr "když umí {0}"
+
+#. Py3Format
+msgid "with at least {0} happiness"
+msgstr "s alespoň {0} spokojenosti"
+
+#. Py3Format
+msgid "with at least {0} beauty"
+msgstr "s alespoň {0} krásy"
+
+msgid "<"
+msgstr "<"
+
+msgid ">"
+msgstr ">"
+
+msgid "="
+msgstr "="
+
+#. Py3Format
+msgid "when Attack {0} Defense"
+msgstr "když má Útok {0} Obranu"
+
+msgid "with {0} in the party"
+msgstr "s {0} v týmu"
+
+msgid "in exchange for {0}"
+msgstr "výměnou za {0}"
+
+msgid ""
+"Pretty much anything that exists in the Pokémon world can be found\n"
+"in the Pokédex.  Just type in a name and try it out."
+msgstr ""
+"V podstatě cokoli co existuje v pokémonním světě se dá najít přes "
+"Hledání. Stačí zadat jméno. Vyzkoušej si to!"
+
+msgid "Or you can browse by category:"
+msgstr "Nebo se můžeš proklikat kategoriemi:"
+
+msgid "plural|Pokémon"
+msgstr "Pokémoni"
+
+msgid "Finding stuff"
+msgstr "Hledání"
+
+#. Py2Format
+#, python-format
+msgid ""
+"Lookup works the same way anywhere you can type a name.\n"
+"(\"Lookup\" refers to entering a name to find something(s) specific.\n"
+"\"Searching\" is <a href=\"%s\">a bit more complicated</a>.)"
+msgstr ""
+"@@@()\n"
+"Hledání funguje stejně všude, kde můžeš zadat jméno.\n"
+"(„<a href=\"%s\">Vyhledávání</a>“ je trochu složitější.)"
+
+#. Py3Format
+msgid "Case ({kecleon} vs {KECLEON}) and extra spaces are ignored."
+msgstr "Velikost písmen ({kecleon}/{KECLEON}) a mezery navíc se ignorují."
+
+msgid "kecleon"
+msgstr "kecleon"
+
+msgid "KECLEON"
+msgstr "KECLEON"
+
+msgid ""
+"If you enter something that's misspelled or could be one of several\n"
+"pages, you'll get a list of up to 10 guesses or matches to choose from."
+msgstr ""
+"Zadáš-li nejednoznačné jméno, nebo když uděláš překlep, dostaneš seznam "
+"až 10 věcí, ze kterých si můžeš vybrat."
+
+#. Py3Format
+#. Feel free to leave out the Psychic example if your language has unambiguous
+#. names.
+msgid ""
+"You can specify what sort of thing you're looking for by putting one\n"
+"or more before a colon, e.g. {pokemon_Kangaskhan} or "
+"{item_move_Metronome}.\n"
+"This is mostly useful when looking things up by national id "
+"({pokemon_151}),\n"
+"because moves and types have ids, too.  It's also helpful when looking up"
+"\n"
+"something ambiguous ({move_Psychic} vs {type_psychic}) if you want to "
+"skip the\n"
+"disambiguation page."
+msgstr ""
+"Chceš-li zadat jaký typ věci hledáš, napiš jej před dvojtečku: např "
+"{pokemon_Kangaskhan} nebo {item_move_Metronome}.\n"
+"Tohle je nejužitečnější při vyhledávání pokémonů podle čísel "
+"({pokemon_151}), protože věci a typy mají čísla taky.\n"
+"A samozřejmě se to hodí pokud hledáš něco s nejednoznačným jménem "
+"({move_Psychic}/{type_psychic}) – ušetříš tím kliknutí."
+
+msgid "pokemon:Kangaskhan"
+msgstr "pokemon:Kangaskhan"
+
+msgid "item,move:metronome"
+msgstr "věc,útok:metronome"
+
+msgid "pokemon:151"
+msgstr "pokemon:151"
+
+msgid "move:Psychic"
+msgstr "útok:Psychic"
+
+msgid "type:psychic"
+msgstr "typ:psychic"
+
+#. Py3Format
+#. This is a tough one, don't get confused.
+#. {charge} will become a link to a search for "charge".
+#. {link_tackle} will become a link to the move that's called Tackle in
+#. English.
+#. {link_charge} will become a link to the move that's called Charge in
+#. English.
+#. {fr_charge} will become a link to the "@fr:charge" search.
+#. {en_charge} will become a link to the "@en:charge" search.
+#. {fr_move_charge} will become a link to the "@fr,move:charge" search.
+msgid ""
+"Similarly, you can restrict lookup by language.\n"
+"{charge} will offer both {link_tackle} and\n"
+"{link_charge}, because Tackle's French name is \"Charge\".\n"
+"If you wanted one or the other, you could enter {fr_charge} or "
+"{en_charge}.\n"
+"These also combine with the prefixes above, as in {fr_move_charge}."
+msgstr ""
+"Stejně tak můžeš hledat podle jazyka. {charge} najde jak {link_tackle} "
+"tak {link_charge}, protože „Charge“ je ve francouzštině jiný útok než v "
+"angličtině.\n"
+"Kdybys chtěl/a jedno nebo druhé, zadej {fr_charge} nebo {en_charge}.\n"
+"Tohletoto se dá kombinovat s kategoriemi, např. {fr_move_charge}."
+
+msgid "move name|tackle"
+msgstr "tackle"
+
+msgid "move|Tackle"
+msgstr "Tackle"
+
+msgid "move name|charge"
+msgstr "charge"
+
+msgid "move|Charge"
+msgstr "Charge"
+
+msgid "Lookup understands the following:"
+msgstr "Hledání rozumí těmhle věcem:"
+
+msgid "National IDs"
+msgstr "Celosvětová pokédexová čísla"
+
+msgid "pokemon:352"
+msgstr "pokemon:352"
+
+msgid "move:1"
+msgstr "útok:1"
+
+msgid "Names"
+msgstr "Jména"
+
+msgid "Eevee"
+msgstr "Eevee"
+
+msgid "Rough Skin"
+msgstr "Rough Skin"
+
+msgid "Super Rod"
+msgstr "Super Rod"
+
+msgid "Route 202"
+msgstr "Route 202"
+
+msgid "Pokémon forms"
+msgstr "Formy pokémonů"
+
+msgid "Speed Deoxys"
+msgstr ""
+
+msgid "Wash Rotom"
+msgstr ""
+
+msgid "Jump to subpages"
+msgstr "Podstránky"
+
+msgid "eevee flavor"
+msgstr "eevee omáčka"
+
+msgid "eevee locations"
+msgstr "eevee výskyt"
+
+msgid "Foreign names"
+msgstr "Cizí jména"
+
+msgid "Misspelled names"
+msgstr "Překlepy"
+
+msgid "Dragontie"
+msgstr "Dragontie"
+
+msgid "Synthesys"
+msgstr "Sinthesys"
+
+msgid "psychich"
+msgstr "psychich"
+
+msgid "Thunder Shock"
+msgstr "Thunder Shock"
+
+msgid "Wildcards"
+msgstr "Zástupné znaky"
+
+msgid "pokemon:????"
+msgstr "pokemon:????"
+
+msgid "move:thunder*"
+msgstr "útok:thunder*"
+
+msgid "item:* ball"
+msgstr "věc:* ball"
+
+msgid "\"Random\""
+msgstr "Náhodné stránky"
+
+msgid "pokemon:random"
+msgstr "pokemon:náhodný"
+
+msgid "move:random"
+msgstr "útok:náhodný"
+
+msgid "random"
+msgstr "náhoda"
+
+msgid "Magic words"
+msgstr "Kouzelná slovíčka"
+
+msgid "???"
+msgstr "???"
+
+msgid "obdurate"
+msgstr "obdurate"
+
+msgid ""
+"You can use anything on this page however you want.\n"
+"Nintendo made these, not me, so I don't claim to own them in any way.\n"
+"If you want to credit me for collecting or ripping them, that's cool;\n"
+"if not, that's cool too.  Enjoy."
+msgstr ""
+"Tyto soubory můžeš použít jak chceš.\n"
+"Vytvořilo to Nintendo, ne já, takže si na ně nedělám žádný nárok. "
+"Chceš-li mě uvést jako autora sbírky nebo člověka, co je vytahal z her, "
+"nebudu se zlobit; nechceš-li, je všechno v pořádku."
+
+msgid "Sprite packs"
+msgstr "Balíčky spritů"
+
+msgid ""
+"These are tarballs of all the sprites from each generation.\n"
+"If your zip program can't open them, try\n"
+"<a href=\"http://www.7-zip.org/\">7-zip</a>."
+msgstr ""
+"Tohle jsou tarbally všech spritů z každé generace.\n"
+"Jestli je tvůj zip program neotevře, zkus\n"
+"<a href=\"http://www.7-zip.org/\">7-zip</a>."
+
+msgid "Main Pokémon sprites"
+msgstr "Hlavní sprity Pokémonů"
+
+msgid "Generation I"
+msgstr "I. generace"
+
+msgid "— all sprites from Green, Red, Blue, and Yellow"
+msgstr "— všechny sprity z Green, Red, Blue, a Yellow"
+
+msgid "Generation II"
+msgstr "II. generace"
+
+msgid "— all sprites from Gold, Silver, and Crystal (including animations)"
+msgstr "— všechny sprity z Gold, Silver, a Crystal (včetně animací)"
+
+msgid "Generation III"
+msgstr "III. generace"
+
+msgid ""
+"— all sprites from Ruby, Sapphire, Emerald (including animations), "
+"FireRed, and LeafGreen"
+msgstr ""
+"— všechny sprity z Ruby, Sapphire, Emerald (včetně animací), FireRed, a "
+"LeafGreen"
+
+msgid "Generation IV"
+msgstr "IV. generace"
+
+msgid "— all sprites from Diamond, Pearl, Platinum, HeartGold, and SoulSilver"
+msgstr "— všechny sprity z Diamond, Pearl, Platinum, HeartGold, a SoulSilver."
+
+msgid "Generation V"
+msgstr "Generace V"
+
+msgid "— all sprites from Black and White"
+msgstr "— všechny sprity z Black a White"
+
+msgid "Others"
+msgstr "Ostatní"
+
+msgid "Pokémon icons"
+msgstr "Ikonky Pokémonů"
+
+msgid "— sprites used in the Pokémon screen (no animations)"
+msgstr "— sprity použité na obrazovkách s Pokémony (bez animací)"
+
+msgid "Overworld"
+msgstr ""
+
+msgid ""
+"— overworld Pokémon sprites from HeartGold/SoulSilver, plus a few "
+"overworld trainers"
+msgstr ""
+
+msgid "Footprints"
+msgstr "Stopy"
+
+msgid "Trozei sprites"
+msgstr "Trozei sprity"
+
+msgid "— sprite for each Pokémon from Pokémon Trozei"
+msgstr "— sprite pro každého Pokémona z Pokémon Trozei"
+
+msgid "— includes large sprites from Berry Tags and the Sinnoh Underground"
+msgstr "— obsahuje velké sprity z Berry Tagů a Sinnohského podzemí"
+
+msgid "Chrome"
+msgstr ""
+
+msgid ""
+"— sprites for types, contest types, habitats, shiny leaves, ribbons, et "
+"al."
+msgstr ""
+
+msgid "Main sprite montages"
+msgstr ""
+
+msgid ""
+"Every Pokémon combined into a single large image by the <a "
+"href=\"http://www.imagemagick.org/script/montage.php\"><code>montage</code></a>"
+" program."
+msgstr ""
+
+msgid "Game Boy"
+msgstr "Game Boy"
+
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
+
+msgid "Game Boy Color"
+msgstr "Game Boy Color"
+
+msgid "normal"
+msgstr "normální"
+
+msgid "shiny"
+msgstr "shiny"
+
+#. Py2Format
+#, python-format
+msgid "%s back"
+msgstr "%s zezadu"
+
+msgid "frame 2"
+msgstr "2. snímek"
+
+msgid "frame 2 shiny"
+msgstr "2. snímek, shiny"
+
+msgid "shiny frame 2"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s ♂ vs ♀"
+msgstr "%s, ♂ vs. ♀"
+
+#. Py2Format
+#, python-format
+msgid "%s front"
+msgstr "%s zepředu"
+
+msgid "facing forwards"
+msgstr ""
+
+msgid "facing right"
+msgstr ""
+
+msgid "facing backwards"
+msgstr ""
+
+msgid "shiny forwards"
+msgstr ""
+
+msgid "shiny right"
+msgstr ""
+
+msgid "shiny backwards"
+msgstr ""
+
+msgid "Pokémon footprints"
+msgstr "Stopy Pokémonů"
+
+msgid "Pokémon sugimori art, shrunk down"
+msgstr ""
+
+msgid "Berries"
+msgstr "Bobule"
+
+msgid "Pokémon cries"
+msgstr ""
+
+msgid "— encoded as Ogg Vorbis quality 3"
+msgstr ""
+
+msgid "Sugimori art"
+msgstr "Sugimori obrázky"
+
+msgid "— official art for every Pokémon"
+msgstr "— oficiální obrázky všech Pokémonů"
+
+msgid "Full database as gzipped SQLite"
+msgstr "Celá databaze jako gzippovaný SQLite"
+
+msgid ""
+"But see <a "
+"href=\"http://bugs.veekun.com/projects/pokedex/wiki/GettingData\">the "
+"documentation</a> for other databases or real instructions."
+msgstr ""
+
+msgid "Source code for everything"
+msgstr "Zdrojový kód všeho"
+
+msgid ""
+"use \"snapshot\" links or <a "
+"href=\"http://bugs.veekun.com/projects/veekun/wiki/Documentation\">the "
+"real way</a>"
+msgstr ""
+
+msgid "dex"
+msgstr "dex"
+
+msgid "Downloads - Pokédex"
+msgstr "Ke stažení – Pokédex"
+
+msgid "Essentials"
+msgstr "Základní informace"
+
+msgid "Summary"
+msgstr "Shrnutí"
+
+msgid "Effect"
+msgstr "Efekt"
+
+msgid "Moves affected"
+msgstr "Ovlivněné útoky"
+
+msgid "anchor|moves"
+msgstr "útoky"
+
+msgid "History"
+msgstr "Historie"
+
+#. Py2Format
+#, python-format
+msgid "Before %s"
+msgstr "Před %s"
+
+msgid "Flavor"
+msgstr "Omáčka okolo"
+
+msgid "Flavor Text"
+msgstr "Popisky"
+
+msgid "Foreign Names"
+msgstr "Cizí jména"
+
+msgid "External Links"
+msgstr "Externí odkazy (v angličtině)"
+
+msgid "Bulbapedia"
+msgstr "Bulbapedie"
+
+msgid "Legendary Pokémon"
+msgstr "Legendary Pokémon"
+
+msgid "Serebii.net"
+msgstr "Serebii.net"
+
+msgid "Smogon"
+msgstr "Smogon"
+
+#. Py2Format
+#, python-format
+msgid "%s - Abilities"
+msgstr "%s - Schopnosti"
+
+msgid "Ability list"
+msgstr "Seznam schopností"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Gen"
+msgstr "Gen."
+
+msgid "Name"
+msgstr "Jméno"
+
+msgid "idspispopd"
+msgstr "idspisopod"
+
+msgid "iddqd"
+msgstr "iddqd"
+
+msgid "cass"
+msgstr "cass"
+
+msgid "uuddlrlrba"
+msgstr "uuddlrlrba"
+
+msgid "hold down+b"
+msgstr "držet dolů+b"
+
+msgid "talk to oak 250 times"
+msgstr "250krát si promluvit s oakem"
+
+msgid "its a secret to everyone"
+msgstr "pssst, tajemství"
+
+msgid "YEAH"
+msgstr "JO!"
+
+msgid "Success"
+msgstr "Úspěch"
+
+msgid "Cheat Unlocked"
+msgstr "Cheat odemknut"
+
+msgid "pocket"
+msgstr "kapsa"
+
+msgid "Cost"
+msgstr "Cena"
+
+#. Py2Format
+#, python-format
+msgid "%s Pokédollars"
+msgstr "%s Pokédolarů"
+
+msgid "Can't be bought or sold"
+msgstr "Nelze koupit ani prodat"
+
+msgid "Flags"
+msgstr "Štítky"
+
+msgid "Special move effects"
+msgstr "Zvláštní efekty útoků"
+
+msgid "Fling"
+msgstr "Fling"
+
+msgid "Natural Gift"
+msgstr "Natural Gift"
+
+#. Py3Format
+msgid "Inflicts regular {type} damage with {power} power"
+msgstr "Působí normální zranění typu {type} se sílou {power}"
+
+msgid "Flavor text"
+msgstr "Popisky"
+
+msgid "Berry tag"
+msgstr "Informace pro zahrádkáře"
+
+msgid "Growth"
+msgstr "Rychlost růstu"
+
+msgid "Maximum harvest"
+msgstr "Maximální sklizeň"
+
+#. Py2Format
+#, python-format
+msgid "%s berries"
+msgstr "%s"
+
+msgid "Time to grow"
+msgstr "Čas růstu"
+
+#. Py2Format
+#, fuzzy, python-format
+msgid "%s hours per stage"
+msgid_plural "%s hour per stage"
+msgstr[0] "%s hodina na stupeň"
+msgstr[1] "%s hodiny na stupeň"
+msgstr[2] "%s hodin na stupeň"
+
+#. Py2Format
+#, fuzzy, python-format
+msgid "%s hour total"
+msgid_plural "%s hours total"
+msgstr[0] "%s hodina celkem"
+msgstr[1] "%s hodiny celkem"
+msgstr[2] "%s hodin celkem"
+
+#. Py2Format
+#, fuzzy, python-format
+msgid "%s/%s hours"
+msgid_plural "%s/%s hours"
+msgstr[0] "%s/%s hodina"
+msgstr[1] "%s/%s hodiny"
+msgstr[2] "%s/%s hodin"
+
+msgid "Soil drying rate"
+msgstr "Rychlost schnutí půdy"
+
+msgid "Taste"
+msgstr "Chuť"
+
+#. Py2Format
+#, python-format
+msgid "(raises %s)"
+msgstr "(zvyšuje %s)"
+
+msgid "—"
+msgstr "—"
+
+msgid "Smoothness"
+msgstr "Hladkost"
+
+msgid "Size"
+msgstr "Velikost"
+
+msgid "Firmness"
+msgstr "Tuhost"
+
+msgid "Held by wild Pokémon"
+msgstr "Drženo divokými Pokémony"
+
+#. Py2Format
+#, python-format
+msgid "%s pocket"
+msgstr "kapsa na %s"
+
+#. Py2Format
+#, python-format
+msgid "%s - Items"
+msgstr "%s – Věci"
+
+msgid "Pick your pocket:"
+msgstr "Vyber si kapsu:"
+
+msgid "Num"
+msgstr "Č."
+
+msgid "Item"
+msgstr "Věci"
+
+#. Py2Format
+#, python-format
+msgid "%s pocket - Items"
+msgstr "kapsa na %s – Věci"
+
+msgid "Search: "
+msgstr "Hledat: "
+
+msgid "Search"
+msgstr "Hledání"
+
+msgid "Download"
+msgstr "Stáhnout"
+
+msgid "Locations"
+msgstr "Výskyt"
+
+#. Py2Format
+#, python-format
+msgid "%s - Locations"
+msgstr "%s - Výskyt"
+
+msgid "Hmmm, there are several things with that name.  Did you mean:"
+msgstr "Hmmm, takhle se jmenuje více věcí.  Měl/a jsi na mysli:"
+
+msgid "It seems you don't know how to spell.  Did you mean one of these?"
+msgstr "Zřejmě neumíš pořádně psát.  Měl/a jsi na mysli jedno z následujících?"
+
+#. Py2Format
+#, python-format
+msgid "The %s"
+msgstr "%s"
+
+#. Py3Format
+msgid ""
+"Boy, this is a lot of matches!  Maybe you want to use the full-blown <a "
+"href=\"{pokesearch}\">Pokémon search</a> or <a href=\"{movesearch}\">move"
+" search</a>, or check the various <a href=\"{dexurl}\">lists of "
+"everything and lookup help</a>"
+msgstr ""
+"Jej, to se ale našlo věcí!  Možná bys měl rovnou raději použít <a "
+"href=\"{pokesearch}\">hledání pokémonů</a>, <a "
+"href=\"{movesearch}\">hledání  útoků</a>, nebo zkusit <a "
+"href=\"{dexurl}\">seznamy všeho a pomoc s vyhledáváním</a>"
+
+msgid "Need help?"
+msgstr "Potřebuješ pomoc?"
+
+msgid "Disambiguation"
+msgstr "Rozcestník"
+
+msgid "Damage Dealt"
+msgstr "Způsobené zranění"
+
+msgid "Stats"
+msgstr "Staty"
+
+msgid "Power"
+msgstr "Síla"
+
+msgid "—  (no damage)"
+msgstr "—  (žádné zranění)"
+
+msgid "*  (no fixed power)"
+msgstr "*  (nemá pevně danou sílu)"
+
+#. Py3Format
+msgid "{power}; percentile {perc:.1f}"
+msgstr "{power}; percentil {perc:.1f}"
+
+msgid "Accuracy"
+msgstr "Přesnost"
+
+msgid "—  (cannot miss)"
+msgstr "—  (nemůže minout)"
+
+#. Py3Format
+msgid "≈ {0:.1f} power"
+msgstr "≈ síla {0:.1f}"
+
+msgid "PP"
+msgstr "PP"
+
+msgid "n/a"
+msgstr "není"
+
+msgid "Target"
+msgstr "Cíl"
+
+msgid "(fast)"
+msgstr "(rychlý)"
+
+msgid "(slow)"
+msgstr "(pomalý)"
+
+msgid "(normal)"
+msgstr "(normální)"
+
+msgid "Machines"
+msgstr "TM/HM"
+
+msgid "Not a TM"
+msgstr "Není TM"
+
+#. Py3Format
+msgid "HM{number:02d}"
+msgstr "HM{number:02d}"
+
+#. Py3Format
+msgid "TM{number:02d}"
+msgstr "TM{number:02d}"
+
+msgid "Contests"
+msgstr ""
+
+#. Py2Format
+#, python-format
+msgid "%s Contest"
+msgstr ""
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Appeal"
+msgstr ""
+
+msgid "Jam"
+msgstr ""
+
+msgid "Use after"
+msgstr "Poušít po"
+
+msgid "Use before"
+msgstr "Použít před"
+
+msgid "Similar moves"
+msgstr "Podobné útoky"
+
+#. Py2Format
+#, python-format
+msgid "These moves all have the same effect as %s"
+msgstr "Tyto útoky mají stejný efekt jako %s"
+
+#. Py2Format
+#, python-format
+msgid "No other moves have the same effect as %s"
+msgstr "Zádný jiný útok nemá stejný efekt jako %s"
+
+msgid "Azure Heights"
+msgstr "Azure Heights"
+
+msgid "PsyPoke"
+msgstr "PsyPoke"
+
+#. Py2Format
+#, python-format
+msgid "%s - Moves"
+msgstr "%s - Útoky"
+
+msgid "Move lists"
+msgstr "Seznamy útoků"
+
+#. Py3Format
+msgid ""
+"The following are all links to the <a href=\"{url}\">move search</a>, so "
+"you can filter and sort however you want."
+msgstr ""
+"Následující jsou všechno odkazy na <a href=\"{url}\">hledání útoků</a>, "
+"takže si je pak můžeš vyfiltrovat jak chceš."
+
+msgid "EVERY MOVE EVER"
+msgstr "ÚPLNĚ VŠECHNY ÚTOKY"
+
+msgid "Red/Blue/Yellow"
+msgstr "Red/Blue/Yellow"
+
+msgid "Gold/Silver/Crystal"
+msgstr "Gold/Silver/Crystal"
+
+msgid "Ruby/Sapphire/Emerald"
+msgstr "Ruby/Sapphire/Emerald"
+
+msgid "Diamond/Pearl/Platinum"
+msgstr "Diamond/Pearl/Platinum"
+
+msgid "Black/White"
+msgstr "Black/White"
+
+msgid "Same as:"
+msgstr "Stejná jako:"
+
+msgid "Inverse of"
+msgstr "Opak od"
+
+msgid ""
+"This nature is neutral; it does not affect stats and causes no flavor "
+"preference."
+msgstr "Tato povaha je neutrální; neovlivňuje staty a nemá vliv na chutě."
+
+msgid "Stat changes"
+msgstr "Změny statů"
+
+msgid "+10%"
+msgstr "+10%"
+
+msgid "-10%"
+msgstr "-10%"
+
+msgid "Taste preference"
+msgstr "Oblíbené chutě"
+
+#. Py2Format
+#, python-format
+msgid "Likes %s; good for"
+msgstr "Má rád %s; vylepšuje"
+
+#. Py2Format
+#, python-format
+msgid "Hates %s; bad for"
+msgstr "Nenávidí %s; zhoršuje"
+
+msgid "Not-so-essentials"
+msgstr "Základní informace"
+
+msgid "Battle Style Preferences"
+msgstr "Preferovaný styl zápasu"
+
+#, fuzzy
+msgid "These only affect the Battle Palace and Verdanturf Battle Tent."
+msgstr "Tohle má vliv jen na Battle Palace a Battle Tent"
+
+msgid "> 50% HP"
+msgstr "> 50% HP"
+
+msgid "< 50% HP"
+msgstr "< 50% HP"
+
+msgid "Pokéathlon Stats"
+msgstr "Staty pro Pokéathlon"
+
+#. Py3Format
+msgid "Up to {change} {stat}"
+msgstr "{stat}: až {change}"
+
+msgid ""
+"These Pokémon are selected automatically, based on having roughly equal "
+"stats.  Don't take this as carefully-constructed tournament advice."
+msgstr ""
+"Tihle pokémoni byli vybráni automaticky, protože mají zhruba stejné "
+"staty. Neber to jako promyšlenou strategii na turnaje."
+
+#. Py3Format
+msgid ""
+"These Pokémon are selected automatically, based on having high {histat} "
+"and low {lostat}. Don't take this as carefully-constructed tournament "
+"advice."
+msgstr ""
+"Tihle pokémoni byli vybráni auomaticky, protože mají vyšší {histat} a "
+"nižší {lostat}. Neber to jako promyšlenou strategii na turnaje."
+
+#. Py2Format
+#, python-format
+msgid "%s - Natures"
+msgstr "%s - Povahy"
+
+msgid "Nature list"
+msgstr "Povahy"
+
+msgid "Sort by name"
+msgstr "Seřadit dle jména"
+
+msgid "Sort by stat"
+msgstr "Seřadit dle statu"
+
+msgid "Likes flavor"
+msgstr "Má rád"
+
+msgid "Hates flavor"
+msgstr "Nenávidí"
+
+msgid "Damage Taken"
+msgstr "Utržené zranění"
+
+msgid "Pokédex Numbers"
+msgstr "Pokédexová čísla"
+
+msgid "Introduced in"
+msgstr "Poprvé v"
+
+msgid "Breeding"
+msgstr "Křížení"
+
+msgid "Gender"
+msgstr "Pohlaví"
+
+msgid "Egg groups"
+msgstr "Skupiny pro křížení"
+
+msgid "Hatch counter"
+msgstr "Počítadlo líhnutí"
+
+msgid "Steps to hatch"
+msgstr "Kroků k vylíhnutí"
+
+msgid "With Magma Armor or Flame Body"
+msgstr "S Magma Armor nebo Flame Body"
+
+msgid "Compatibility"
+msgstr "Kompatibilita"
+
+msgid ""
+"Ditto can breed with any other breedable Pokémon, but can never produce a"
+" Ditto egg."
+msgstr "Ditto lze křížit s každým křížitelným Pokémonem kromě Ditta."
+
+#. Py3Format
+msgid "{0} cannot breed."
+msgstr "{0} se nedá křížit"
+
+msgid "Training"
+msgstr "Trénink"
+
+msgid "Base EXP"
+msgstr "Zákl. EXP"
+
+msgid "EXP at level"
+msgstr "EXP na úrovni"
+
+msgid "Effort points"
+msgstr "\"Effort body\""
+
+msgid "Capture rate"
+msgstr "Chytitelnost"
+
+msgid "Base happiness"
+msgstr "Zákl. spokojenost"
+
+msgid "Growth rate"
+msgstr "Rychlost růstu"
+
+msgid "Wild held items"
+msgstr "Držené věci u výskytů"
+
+msgid "nothing"
+msgstr "nic"
+
+msgid "Evolution"
+msgstr "Vývin"
+
+msgid "See also:"
+msgstr "Viz"
+
+msgid "Compare this family"
+msgstr "Porovnat tyto Pokémony"
+
+msgid "Baby"
+msgstr "Mládě"
+
+msgid "Basic"
+msgstr "Základní"
+
+msgid "Stage 1"
+msgstr "1. vývin"
+
+msgid "Stage 2"
+msgstr "2. vývin"
+
+msgid "Either parent must hold "
+msgstr "Jeden z rodičů musí držet "
+
+#. Py2Format
+#, python-format
+msgid "%s Forms"
+msgstr "%s - formy"
+
+msgid "Level"
+msgstr "Úroveň"
+
+msgid "Effort"
+msgstr "EV"
+
+msgid "Percentile rank"
+msgstr "Percentilní hodnocení"
+
+msgid "Pctile"
+msgstr "Percentil"
+
+msgid "Min IVs"
+msgstr "Min. IV"
+
+msgid "Max IVs"
+msgstr "Max. IV"
+
+msgid "Detailed flavor page covering all versions"
+msgstr "Podobná stránka s informacemi ze všech verzí"
+
+msgid "Sprites"
+msgstr "Sprity"
+
+msgid "Miscellany"
+msgstr "Různé"
+
+msgid "Species"
+msgstr "Druh"
+
+msgid "Color"
+msgstr "Barva"
+
+msgid "Cry"
+msgstr "Zvuk"
+
+msgid "Habitat"
+msgstr "Prostředí"
+
+msgid "Footprint"
+msgstr "Stopa"
+
+msgid "Shape"
+msgstr "Tvar těla"
+
+msgid "Height"
+msgstr "Velikost"
+
+msgid "Weight"
+msgstr "Hmotnost"
+
+msgid "Ridiculously detailed breakdown"
+msgstr "Šíleně podrobný rozpis"
+
+msgid "header id|links"
+msgstr "odkazy"
+
+msgid "Gengar and Haunter's Pokémon Dungeon"
+msgstr "Gengar and Haunter's Pokémon Dungeon"
+
+#. Py3Format
+msgid "{name} – Pokémon #{number}"
+msgstr "{name} – Pokémon č. {number}"
+
+msgid "Search:"
+msgstr "Hledat:"
+
+msgid "Pokédex Description"
+msgstr "Pokédexový popisek"
+
+msgid "anchor|pokedex"
+msgstr "pokedex"
+
+msgid "Main Game Portraits"
+msgstr "Sprity z hlavních her"
+
+msgid "anchor|main-sprites"
+msgstr "hlavni-sprity"
+
+msgid "Forms"
+msgstr "Formy"
+
+msgid "Red & Green, Red & Blue, Yellow"
+msgstr "Red & Green, Red & Blue, Yellow"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "SGB"
+msgstr "SGB"
+
+msgid "GBC"
+msgstr "GBC"
+
+msgid "Gold & Silver, Crystal"
+msgstr "Gold & Silver, Crystal"
+
+msgid "Normal"
+msgstr "Normální"
+
+msgid "Shiny"
+msgstr "Shiny"
+
+msgid "Ruby & Sapphire, Emerald, FireRed & LeafGreen"
+msgstr "Ruby & Sapphire, Emerald, FireRed & LeafGreen"
+
+msgid "Diamond & Pearl, Platinum, HeartGold & SoulSilver"
+msgstr "Diamond & Pearl, Platinum, HeartGold & SoulSilver"
+
+msgid "(male)"
+msgstr "(sameček)"
+
+msgid "(female)"
+msgstr "(samička)"
+
+msgid "Black & White"
+msgstr "Black & White"
+
+msgid "Miscellaneous Game Art"
+msgstr "Různá herní grafika"
+
+msgid "anchor|misc-sprites"
+msgstr "herni-ruzne"
+
+msgid "HeartGold & SoulSilver Overworld"
+msgstr "HeartGold a SoulSilver venku z pokéballu"
+
+msgid "overworld sprite|Left"
+msgstr "Zprava"
+
+msgid "overworld sprite|Down"
+msgstr "Zepředu"
+
+msgid "overworld sprite|Up"
+msgstr "Zezadu"
+
+msgid "overworld sprite|Right"
+msgstr "Zleva"
+
+msgid "Female"
+msgstr "Samička"
+
+msgid "Other Images"
+msgstr "Další obrázky"
+
+msgid "anchor|other"
+msgstr "ostatní"
+
+msgid "Official artwork by Ken Sugimori"
+msgstr "Oficiální obrázek od Kena Sugimoriho"
+
+#. Py3Format
+msgid "{name} flavor – Pokémon #{number}"
+msgstr "Omáčka okolo – {name}, pokémon č. {number}"
+
+msgid "Pokémon lists"
+msgstr "Seznamy pokémonů"
+
+#. Py3Format
+msgid ""
+"The following are all links to the <a href=\"{url}\">Pokémon search</a>, "
+"so you can filter and sort however you want."
+msgstr ""
+"Následující odkazy všechny vedou na <a href=\"{url}\">vyhledávání "
+"Pokémonů</a>, takže si je můžeš vyfiltrovat nebo seřadit jak je libo."
+
+msgid "By generation"
+msgstr "Dle genrace"
+
+msgid "EVERY POKéMON EVER"
+msgstr "ÚPLNĚ VŠICHNI POKÉMONI"
+
+msgid "By regional Pokédex"
+msgstr "Dle regionálního pokédexu"
+
+msgid "Johto"
+msgstr "Johto"
+
+msgid "Hoenn"
+msgstr "Hoenn"
+
+msgid "Sinnoh"
+msgstr "Sinnoh"
+
+msgid "Miscellaneous interesting lists"
+msgstr "Různé zajimavé seznamy"
+
+msgid "Basic Pokémon"
+msgstr "Základní pokémoni"
+
+msgid "Fully-evolved Pokémon"
+msgstr "Plně vyvinutí pokémoni"
+
+msgid "Non-evolving Pokémon"
+msgstr "Nevyvíjející se pokémoni"
+
+#. Py2Format
+#, python-format
+msgid "%s locations"
+msgstr "%s: výskyt"
+
+#. Py3Format
+msgid "{pkmn} locations - Pokémon #{id}"
+msgstr "Výskyt – {pkmn}, pokémon č. {id}"
+
+msgid "Damage Dealt/Taken"
+msgstr "Utržené/způsobené zranění"
+
+#. Py2Format
+#, python-format
+msgid ""
+"\n"
+"In Generation IV, pure []{type:flying}-types become ???-type during "
+"[]{move:roost}.  This can be accomplished with\n"
+"[]{move:conversion}, []{move:conversion-2}, or the ability []{ability"
+":color-change}.  A Pokémon can legitimately have both\n"
+"Roost and one of these only through the use of []{move:mimic}, "
+"[]{move:sketch}, []{move:role-play}, or []{move:skill-swap}.\n"
+"(No Pokémon that has []{ability:trace} or []{ability:multitype} learns "
+"Roost, and Multitype cannot be copied.)\n"
+"\n"
+"Generation IV has [sprites for a ???-type Arceus](%s), even though Arceus"
+" cannot become ???-type through regular play.\n"
+"Eggs are purely ???-type before hatching before Generation V, and are "
+"displayed as such in the Generation III status\n"
+"screen.  In Generation V, the ??? type no longer exists.\n"
+msgstr ""
+
+#. Py3Format
+msgid "Formerly {0}-type moves"
+msgstr "Útoky, které měly dříve {0} typ"
+
+#, fuzzy
+msgid "moves:former"
+msgstr "útok:1"
+
+msgid "Before"
+msgstr "Použít před"
+
+#. Py2Format
+#, python-format
+msgid "%s - Types"
+msgstr "%s - Typy"
+
+#. Py2Format
+#, python-format
+msgid "Showing part-%s types"
+msgstr ""
+
+msgid "If you like, show a secondary Pokémon type:"
+msgstr "Chceš-li, zadej druhý typ:"
+
+msgid "none"
+msgstr "žádný"
+
+msgid ""
+"\"Score\" is a simple count of how many other types a type is strong "
+"against or weak to.  Bigger is better."
+msgstr ""
+"„Skóre“ je prostý počet typů, proti kterým je daný typ dobrý nebo špatný."
+" Větší čísla jsou lepší."
+
+msgid "Move"
+msgstr "Útok"
+
+msgid "Score"
+msgstr "Skóre"
+
+msgid ""
+"Have you spent the past six hours trying to catch Giratina in Ultra "
+"Balls?  Me, too!  What a jerk.  This gadget will tell you which ball is "
+"the best choice against your target, and about how long it'll take to "
+"catch."
+msgstr ""
+"Strávil(a) jsi posledních šest hodin snažením se chytit Giratinu pomocí "
+"UltraBallu?  Já taky!  Ať se nám to už nestane.  Tahle pomůcka ti řekne "
+"co je nejlepší na ty příšerky házet, a taky asi jak dlouho bude chyání "
+"trvat."
+
+msgid "Target Pokémon"
+msgstr "Cílový Pokémon"
+
+msgid "Specialty ball stuff"
+msgstr "Další blbosti pro některé bally"
+
+msgid ""
+"These affect the functionality of some specialty balls, but aren't part "
+"of the regular capture rate calculations.  You can skip them if you want."
+msgstr ""
+"Tyhle ovlivňují funkčnost nějakých zvláštních ballů, ale nejsou součástí "
+"normálních kalkulací chytitelnosti.  Jestli chceš, můžeš je přeskočit."
+
+msgid "Pokéball, go!"
+msgstr "Pokéballe, leť!"
+
+msgid "Ball Success Rates"
+msgstr "Účinnosti"
+
+#. Py3Format
+msgid "{pokemon}'s capture rate: {rate}/255 or about {precent:.01f}%."
+msgstr "{pokemon} má chytitelnost {rate}/255, neboli asi {precent:.01f}%."
+
+msgid ""
+"Disclaimer: This is all approximate!  The game might still hate you more "
+"than these numbers indicate."
+msgstr ""
+"Tohle je všechno jen odhad!  Hra tě stejně může nenávidět víc, než tyhle "
+"čísla značí."
+
+msgid "And no, Up+B doesn't actually do anything."
+msgstr "A ne, nahoru+B ve skutečnosti nic nedělá."
+
+msgid "Legend: Ball wobbles"
+msgstr "Legenda: Ball se zatřese"
+
+msgid "zero"
+msgstr "vůbec"
+
+msgid "one"
+msgstr "jednou"
+
+msgid "two"
+msgstr "dvakrát"
+
+msgid "three"
+msgstr "třikrát."
+
+msgid "times."
+msgstr "krát."
+
+msgid "Capture!"
+msgstr "Chyceno!"
+
+msgid "Mouseover for specifics."
+msgstr "Najeď myší pro podrobnosti."
+
+msgid "Ball"
+msgstr "Ball"
+
+msgid "Chance to catch"
+msgstr "Šance chytit"
+
+msgid "Avg. tries"
+msgstr "Prům. pokusů"
+
+msgid "Requirement"
+msgstr "Podmínka"
+
+msgid "Capture:"
+msgstr "Chycení:"
+
+msgid "compare"
+msgstr "Porovnat:"
+
+msgid "Select up to eight Pokémon to compare their stats, moves, etc."
+msgstr "Vyber až osm Pokémonů pro porovnání statů, útoků atp."
+
+msgid "Version to use for moves:"
+msgstr "Verze pro porovnání útoků:"
+
+msgid "no matches"
+msgstr "žádný nález"
+
+msgid "Compare:"
+msgstr "Porovnat:"
+
+msgid "Move left"
+msgstr "Posunout vlevo"
+
+msgid "remove"
+msgstr "odstranit"
+
+msgid "Remove"
+msgstr "Odstranit"
+
+msgid "Move right"
+msgstr "Posunout vpravo"
+
+msgid "Breeding + Training"
+msgstr "Křížení a trénování"
+
+msgid "Base stat total"
+msgstr "Součet zákl. statů"
+
+msgid "Genus"
+msgstr ""
+
+msgid ""
+"WHIRLWIND EXPLANATION: Pokémon have a fixed, permanent score from 0 to 31"
+" for each stat that affects how good that stat can ever get."
+msgstr ""
+
+msgid ""
+"This calculator will figure out that score (called a \"gene\" or, more "
+"obtusely, an \"IV\") for you, so you can discard the <em>unworthy</em>.  "
+"It's more accurate for higher-level Pokémon, so it's helpful to go into a"
+" level 100 wifi battle with someone and check your Pokémon's stats from "
+"there."
+msgstr ""
+
+msgid "Crunch numbers"
+msgstr "Spočítat"
+
+msgid "−10%"
+msgstr "−10%"
+
+msgid "And for your copy/pasting pleasure:"
+msgstr "A na zkopírování:"
+
+msgid "HP"
+msgstr "HP"
+
+msgid "Physical"
+msgstr "Fyzický"
+
+msgid "Special"
+msgstr "Speciální"
+
+msgid "Speed"
+msgstr "Rychlost"
+
+msgid ""
+"Uh-oh.  The set of stats you gave is totally impossible. Better double-"
+"check against your game."
+msgstr ""
+"Jejky! Tyhle staty se nedají získat. Zkontroluj, jestli je všechno "
+"správně zadáno."
+
+msgid ""
+"The most common problem is effort; if a Pokémon has been trained at all, "
+"it'll have some effort accumulated.  This affects its stats, and there's "
+"no way to know how much effort it has unless you've been keeping track.  "
+"Sorry."
+msgstr ""
+"Nejčastější problém je s EV; pokud byl pokémon jakkoli trénován, \"\n"
+"\"bude mít nastřádány nějaké EV body. To ovlivňuje jeho statistiky, a "
+"pokud \"\n"
+"\"sis o EV nevedl/a záznamy, nedá se to moc dobře napravit. Žmolka."
+
+msgid ""
+"If you're desperate, you could try the effort-lowering berries (Pomeg et "
+"al.), which will reduce effort in a given stat by 10 at a time.  Drop "
+"every stat's effort until it won't drop any further, then try again."
+msgstr ""
+"Jediná možnost je použít Berry, které snižující EV (např. Pomeg). \"\n"
+"\"Každá z nich sníží příslušnou hodnotu EV o 10 bodů. Skrmuj je, než se "
+"staty \"\n"
+"\"přestanou snižovat, a pak tuhle kalkulačku zkus použít znovu."
+
+msgid ""
+"\"Stats\" are your Pokémon's actual stats, from the Summary screen in-"
+"game."
+msgstr ""
+
+msgid "\"Effort\" is accumulated as your Pokémon battles."
+msgstr ""
+
+msgid ""
+"If you don't know what this is, and your Pokémon has EVER battled or "
+"eaten a vitamin, this calculator CANNOT work.  Using Rare Candy is okay, "
+"though."
+msgstr ""
+
+msgid "Reset"
+msgstr "Resetovat"
+
+msgid "or"
+msgstr "nebo"
+
+msgid "start over"
+msgstr "začít znovu"
+
+msgid "Results"
+msgstr "Výsledky"
+
+msgid "Start over"
+msgstr "Začít znovu"
+
+msgid "Nothing found."
+msgstr "Nic nenalezeno"
+
+msgid "Move Search"
+msgstr "Vyhledávání útoků"
+
+msgid ""
+"Unless otherwise specified: matching moves must match ALL of the "
+"criteria, but can match ANY selections within a group."
+msgstr ""
+
+msgid "Anything left blank is ignored entirely."
+msgstr "Prázdná políčka budou ignorována."
+
+msgid "Damage class"
+msgstr "Kategorie zranění"
+
+msgid "Exact same effect as:"
+msgstr "Úplně stejný efekt jako:"
+
+msgid "Category"
+msgstr "Kategorie"
+
+msgid "Status ailment"
+msgstr "Změna stavu"
+
+msgid "Numbers"
+msgstr "Čísla"
+
+msgid "Moves must be learnable by at least one of these Pokémon:"
+msgstr "Aspoň jeden z těchto pokémonů se musí útok učit:"
+
+msgid "Learned by"
+msgstr "Učí se"
+
+msgid "Version"
+msgstr "Verze"
+
+msgid "Display and sorting"
+msgstr "Výpis a řazení"
+
+msgid "Drag or double-click us!"
+msgstr "Táhni nebo dvakrát poklepej!"
+
+msgid "Formatting codes"
+msgstr "Formátovací kódy"
+
+msgid ""
+"e.g.: <code>* $name ($type)</code> becomes <code>&bull; Surf "
+"(water)</code>"
+msgstr ""
+"např. z <code>* $name ($type)</code> vznikne <code>&bull; Surf "
+"(vodní)</code>"
+
+msgid "button|Search"
+msgstr "Hledat"
+
+msgid "Reset form"
+msgstr "Vymazat formulář"
+
+msgid "Eff"
+msgstr "Ef."
+
+msgid "Class"
+msgstr "Třída"
+
+msgid "Acc"
+msgstr "Přesn."
+
+msgid "Pri"
+msgstr "Prio"
+
+msgid "It seems you entered something bogus for:"
+msgstr "Něco mi nesedí u:"
+
+msgid "Pokémon Search"
+msgstr "Vyhledávání pokémonů"
+
+msgid ""
+"Unless otherwise specified: matching Pokémon must match ALL of the "
+"criteria, but can match ANY selections within a group (e.g., evolution "
+"stage)."
+msgstr ""
+
+msgid "Generation"
+msgstr "Generace"
+
+msgid ""
+"Understands single numbers (<code>50</code>); ranges "
+"(<code>17-29</code>); at-least (<code>100+</code>); at-most (<code>&lt; "
+"100</code>); approximations (<code>120~10</code> = <code>110-130</code>);"
+" and any combination of those (<code>20, 50-60, 90~5</code>)."
+msgstr ""
+"Rozumí číslům (<code>50</code>); rozsahům (<code>17-29</code>); alespoň "
+"(<code>100+</code>); až (<code>&lt; 100</code>); přibližným číslům "
+"(<code>120~10</code> = <code>110-130</code>); a jakýmkoli jejich "
+"kombinacím (<code>20, 50-60, 90~5</code>)."
+
+msgid ""
+"Height and weight work the same way, but require units.  Anything is "
+"acceptable.  You can even use Pokémon names as units."
+msgstr ""
+"Výška a váha fungují stejně, ale potřebují jednotky.  Jakékoliv jednotky "
+"budou fungovat, dokonce i jména pokémonů."
+
+msgid "Base stats"
+msgstr "Základní staty"
+
+msgid "Breeding/Training"
+msgstr "Křížení/Trénink"
+
+msgid "Look for:"
+msgstr "Kouknout po:"
+
+msgid "Pokémon must have all of these moves:"
+msgstr "Pokémon musí mít všechny následující útoky:"
+
+msgid "e.g.: <code>* $id $name</code> becomes <code>&bull; 133 Eevee</code>"
+msgstr ""
+"Například z <code>* $id $name</code> se stane <code>&bull; 133 "
+"Eevee</code>"
+
+msgid "Ability"
+msgstr "Schopnost"
+
+msgid "Attack"
+msgstr "Útok"
+
+msgid "Atk"
+msgstr "Út"
+
+msgid "Hit Points"
+msgstr "HP (životy)"
+
+msgid "Initial hatch counter"
+msgstr ""
+
+msgid "Hatch"
+msgstr "Líhnutí"
+
+msgid "Egg Group"
+msgstr "Skupina pro křížení"
+
+msgid ":)"
+msgstr ":)"
+
+msgid "Special Attack"
+msgstr "Speciální útok"
+
+msgid "SpA"
+msgstr "SpÚ"
+
+msgid "Cap."
+msgstr ""
+
+msgid "Total"
+msgstr "Celkem"
+
+msgid "EXP"
+msgstr "EXP"
+
+msgid "EXP to L100"
+msgstr "EXP do 100. úrovně"
+
+msgid "Defense"
+msgstr "Obrana"
+
+msgid "Def"
+msgstr "Obr"
+
+msgid "Special Defense"
+msgstr "Speciální obrana"
+
+msgid "SpD"
+msgstr "SpO"
+
+msgid "Spd"
+msgstr "Rych"
+
+msgid "Steps"
+msgstr "Kroků"
+
+msgid "lookup widget|Pokédex"
+msgstr "Pokédex"
+
+msgid "Help"
+msgstr "Pomoc"
+
+msgid "Help!"
+msgstr "Pomoc!"
+
+msgid "lookup widget|Look up"
+msgstr "Hledej!"
+
