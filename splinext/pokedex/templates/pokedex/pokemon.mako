@@ -25,7 +25,7 @@ ${h.h1(_('Essentials'))}
 
 ## Portrait block
 <div class="dex-page-portrait">
-    <p id="dex-page-name">${c.pokemon.species.name}</p>
+    <p id="dex-page-name">${h.pokedex.name_with_translation(c.pokemon.species)}</p>
     % if len(c.pokemon.species.pokemon) > 1:
     <p id="dex-pokemon-forme">${c.pokemon.default_form.form_name}</p>
     % endif
@@ -42,8 +42,8 @@ ${h.h1(_('Essentials'))}
 <div class="dex-page-beside-portrait">
 <h2>${_(u"Abilities")}</h2>
 <%def name="_render_ability(ability, _=_)">
-    <dt><a href="${url(controller='dex', action='abilities', name=ability.name.lower())}">${ability.name}</a></dt>
-    <dd class="markdown">${ability.short_effect}</dd>
+    <dt><a href="${url(controller='dex', action='abilities', name=ability.name.lower())}">${dexlib.name_with_translation(ability)}</a></dt>
+    <dd class="markdown">${_.text(ability.short_effect_map).as_html() | n}</dd>
 </%def>
 <dl class="pokemon-abilities">
     % for ability in c.pokemon.abilities:
@@ -105,7 +105,7 @@ ${h.h1(_('Essentials'))}
         <dd>
             <ul class="inline-commas">
                 % for i, egg_group in enumerate(c.pokemon.species.egg_groups):
-                <li>${egg_group.name}</li>
+                <li>${_.text(egg_group.name_map)}</li>
                 % endfor
             </ul>
             % if len(c.pokemon.species.egg_groups) > 1:
@@ -168,7 +168,7 @@ ${h.h1(_('Essentials'))}
             <ul>
                 % for pokemon_stat in c.pokemon.stats:
                 % if pokemon_stat.effort:
-                <li>${pokemon_stat.effort} ${pokemon_stat.stat.name}</li>
+                <li>${_("{number} {stat}", context="Effort points").format(number=pokemon_stat.effort, stat=_.text(pokemon_stat.stat.name_map))}</li>
                 % endif
                 % endfor
             </ul>
@@ -185,7 +185,7 @@ ${h.h1(_('Essentials'))}
         </dd>
         <dt>${_(u"Growth rate")}</dt>
         <dd>
-            ${c.pokemon.species.growth_rate.name}
+            ${_.text(c.pokemon.species.growth_rate.name_map)}
             ${dexlib.subtle_search(action='pokemon_search', growth_rate=c.pokemon.species.growth_rate.max_experience, _=_)}
         </dd>
     </dl>
@@ -352,13 +352,13 @@ ${h.h1(_('Stats'))}
 <%
         stat_info = c.stats[pokemon_stat.stat.name]
 
-        if pokemon_stat.stat.name == 'HP':
+        if pokemon_stat.stat.identifier == 'hp':
             stat_formula = h.pokedex.formulae.calculated_hp
         else:
             stat_formula = h.pokedex.formulae.calculated_stat
 %>\
     <tr class="color1">
-        <th>${pokemon_stat.stat.name}</th>
+        <th>${_.text(pokemon_stat.stat.name_map)}</th>
         <td>
             <div class="dex-pokemon-stats-bar-container">
                 <div class="dex-pokemon-stats-bar" style="margin-right: ${(1 - stat_info['percentile']) * 100}%; background-color: ${stat_info['background']}; border-color: ${stat_info['border']};">${pokemon_stat.base_stat}</div>
@@ -384,14 +384,14 @@ ${h.h1(_('Stats'))}
 </table>
 
 % if c.pokeathlon_stats:
-${h.h2(h.pokedex.version_icons('HeartGold', 'SoulSilver') + u' Pokéathlon Performance', id='pokeathlon')}
+${h.h2(h.pokedex.version_icons('HeartGold', 'SoulSilver') + ' ' + _(u'Pokéathlon Performance'), id=_('pokeathlon', context='header id'))}
 <%
     star_buffed = h.pokedex.pokedex_img('chrome/pokeathlon/star-buffed.png', alt=u'★')
     star_base = h.pokedex.pokedex_img('chrome/pokeathlon/star.png', alt=u'✯')
     star_empty = h.pokedex.pokedex_img('chrome/pokeathlon/star-empty.png', alt=u'☆')
 %>
 
-<p>${star_buffed} Minimum; ${star_base} Base; ${star_empty} Maximum</p>
+<p>${star_buffed} ${_('Minimum')}; ${star_base} ${_('Base')}; ${star_empty} ${_('Maximum')}</p>
 
 % for stat_set in c.pokeathlon_stats:
 <div class="dex-pokeathlon-stats">
@@ -402,11 +402,11 @@ ${h.h2(h.pokedex.version_icons('HeartGold', 'SoulSilver') + u' Pokéathlon Perfo
 
     <dl>
         % for stat in stat_set[1]:
-        <dt>${stat.pokeathlon_stat.name}</dt>
+        <dt>${_.text(stat.pokeathlon_stat.name_map)}</dt>
         <dd>${star_buffed * stat.minimum_stat}${star_base * (stat.base_stat - stat.minimum_stat)}${star_empty * (stat.maximum_stat - stat.base_stat)}</dd>
         % endfor
 
-        <dt>Total</dt>
+        <dt>${_('Total')}</dt>
         <dd>${sum(stat.minimum_stat for stat in stat_set[1])}/${sum(stat.base_stat for stat in stat_set[1])}/${sum(stat.maximum_stat for stat in stat_set[1])}</dd>
     </dl>
 </div>

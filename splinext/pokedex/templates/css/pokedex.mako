@@ -158,6 +158,7 @@ ul.inline-menu > li:last-child:after { content: none; }
 .dex-page-portrait p { margin: 0.25em 0; line-height: 1; }
 .dex-page-beside-portrait:after { display: block; clear: both; content: ""; }
 p#dex-page-name { font-size: 2em; margin: 0.12em 0; }
+p#dex-page-name .translation { display: block; font-size: 50%; }
 #dex-pokemon-forme { font-size: 1.25em; font-weight: bold; }
 #dex-pokemon-portrait-sprite { height: 96px; width: 96px; margin: 0.33em auto; padding: 7px; line-height: 96px; vertical-align: middle; text-align: center; background: url(${h.static_uri('pokedex', 'images/sprite-frame.png')}) center center no-repeat; }
 
@@ -304,6 +305,11 @@ ul#dex-item-pockets { text-align: center; }
 ul#dex-item-pockets li { display: inline-block; }
 ul#dex-item-pockets li img { padding: 4px; }
 
+
+/*** Translations ***/
+
+.translation { color: black; font-weight: normal; }
+.dex-pokemon-moves .translation { font-size: 75%; display: block; }
 
 /*** Lists ***/
 

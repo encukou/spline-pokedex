@@ -416,7 +416,7 @@ def item_link(item, include_icon=True, _=_):
 
     return h.HTML.a(label,
         href=url(controller='dex', action='items',
-                 pocket=item.pocket.identifier, name=item_name.lower()),
+                 pocket=item.pocket.identifier, name=name_with_translation(item)),
     )
 
 
@@ -711,5 +711,10 @@ def download_filesize(path):
             size = size / 1024.
     else:
         raise AssertionError('Serving a file of %s petabytes', size)
-    
 
+def name_with_translation(object):
+    text = object.name_map[c.game_language]
+    if c.game_language != c.language and c.language in object.name_map:
+        name = object.name_map[c.language]
+        text += h.literal('<span class="translation"> (%s)</span>') % name
+    return text

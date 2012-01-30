@@ -211,22 +211,22 @@ ${h.pokedex.pokemon_form_image(pokemon.default_form, prefix='icons')}\
 </%def>
 
 <%def name="move_table_header(gen_instead_of_type=False)">
-<th>Move</th>
+<th>${_('Move')}</th>
 % if gen_instead_of_type:
-<th>Gen</th>
+<th>${_('Gen')}</th>
 % else:
-<th>Type</th>
+<th>${_('Type')}</th>
 % endif
-<th>Class</th>
-<th>PP</th>
-<th>Power</th>
-<th>Acc</th>
-<th>Pri</th>
-<th>Effect</th>
+<th>${_('Class')}</th>
+<th>${_('PP')}</th>
+<th>${_('Power')}</th>
+<th>${_('Acc')}</th>
+<th>${_('Pri')}</th>
+<th>${_('Effect')}</th>
 </%def>
 
 <%def name="move_table_row(move, gen_instead_of_type=False, pp_override=None)">
-<td><a href="${url(controller='dex', action='moves', name=move.name.lower())}">${move.name}</a></td>
+<td><a href="${url(controller='dex', action='moves', name=move.name.lower())}">${h.pokedex.name_with_translation(move) | n}</a></td>
 % if gen_instead_of_type:
 ## Done on type pages; we already know the type, so show the generation instead
 <td class="type">${h.pokedex.generation_icon(move.generation)}</td>
@@ -265,7 +265,7 @@ ${h.pokedex.pokemon_form_image(pokemon.default_form, prefix='icons')}\
 % else:
 <td class="dex-priority-slow">${move.priority}</td>
 % endif
-<td class="markdown effect">${move.short_effect}</td>
+<td class="markdown effect">${_.text(move.short_effect_map)}</td>
 </%def>
 
 <%def name="move_table_blank_row()">
@@ -316,7 +316,6 @@ cry_url = url(controller='dex', action='media', path=h.pokedex.pokemon_media_pat
 </%def>
 
 <%def name="subtle_search(**kwargs)">
-    <% _ = kwargs.pop('_', unicode) %>
     <a href="${url(controller='dex_search', **kwargs)}"
         class="dex-subtle-search-link">
         <img src="${h.static_uri('spline', 'icons/magnifier-small.png')}" alt="${_('Search: ')}" title="${_('Search')}">
@@ -325,10 +324,15 @@ cry_url = url(controller='dex', action='media', path=h.pokedex.pokemon_media_pat
 
 <%def name="foreign_names(object, name_attr='name')">
     <dl>
-        % for language, foreign_name in h.keysort(getattr(object, name_attr + '_map'), lambda lang: lang.order):
-        % if language != c.game_language and foreign_name:
+    <%
+    sorted_names = h.keysort(
+            getattr(object, name_attr + '_map'),
+            lambda lang: (lang.order is not None, lang.order, _.text(lang.name_map)))
+    %>
+        % for language, foreign_name in sorted_names:
+        % if language not in (c.game_language, c.language) and foreign_name:
         ## </dt> needs to come right after the flag or else there's space between it and the colon
-        <dt>${language.name}
+        <dt>${_.text(language.name_map)}
         <img src="${h.static_uri('spline', "flags/{0}.png".format(language.iso3166))}" alt=""></dt>
         % if language.identifier == 'ja':
         <dd>${foreign_name} (${h.pokedex.romanize(foreign_name)})</dd>
@@ -338,4 +342,8 @@ cry_url = url(controller='dex', action='media', path=h.pokedex.pokemon_media_pat
         % endif
         % endfor
     </dl>
+</%def>
+
+<%def name="name_with_translation(object)">\
+    ${h.pokedex.name_with_translation(object) | n}\
 </%def>

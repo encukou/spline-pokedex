@@ -1088,9 +1088,9 @@ class PokedexController(PokedexBaseController):
         c.move_tutor_version_groups = _move_tutor_version_groups(c.moves)
 
         ### Flavor
-        flavors = [f for f in c.pokemon.normal_form.flavor_text if f.language == c.language]
+        flavors = [f for f in c.pokemon.species.flavor_text if f.language == c.language]
         if not flavors:
-            flavors = [f for f in c.pokemon.normal_form.flavor_text if f.language == c.game_language]
+            flavors = [f for f in c.pokemon.species.flavor_text if f.language == c.game_language]
         c.flavor_texts = [f for f in flavors if not f.version or f.version.generation.id == 4]
 
         return
